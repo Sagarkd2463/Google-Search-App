@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function page() {
+export default function WebSearchPage() {
   return (
-    <div>page</div>
+    <div className=''>page</div>
   );
 };
 
