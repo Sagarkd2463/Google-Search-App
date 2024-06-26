@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SearchBox from './SearchBox';
 import { RiSettings3Line } from 'react-icons/ri';
 import { TbGridDots } from 'react-icons/tb';
+import SearchHeaderOptions from './SearchHeaderOptions';
 
 export default function SearchHeader() {
   return (
@@ -25,12 +26,13 @@ export default function SearchHeader() {
         </div>
 
         <div className=''>
-          <RiSettings3Line className=''/>
-          <TbGridDots className=''/>
+          <RiSettings3Line className='' />
+          <TbGridDots className='' />
         </div>
 
         <button className=''>Sign in</button>
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 };
