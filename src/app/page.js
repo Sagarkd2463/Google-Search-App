@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <HomeHeader />
-      <div className="">
+      <div className="d-flex flex-column align-items-center mt-5">
         <Image
           alt="Google Logo"
-          src={''}
+          src={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'}
           width={300}
           height={100}
           priority

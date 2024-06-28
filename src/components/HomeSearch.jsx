@@ -31,14 +31,17 @@ export default function HomeSearch() {
 
   return (
     <>
-      <form className='' onSubmit={handleSubmit}>
-        <AiOutlineSearch className='' />
-        <input type="text" className='' onChange={(e) => setInput(e.target.value)} />
-        <BsFillMicFill className='' />
+      <form className='d-flex w-100 mt-5 mx-auto border border-gray-200 px-5 py-3 rounded-circle hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2xl'
+        onSubmit={handleSubmit}>
+        <AiOutlineSearch className='display-4 text-secondary mr-3' />
+        <input type="text" className='flex-grow focus-outline-none' onChange={(e) => setInput(e.target.value)} />
+        <BsFillMicFill className='text-lg' />
       </form>
-      <div className=''>
-        <button className='' onClick={handleSubmit}>Google Search</button>
-        <button className='' onClick={randomSearch} disabled={randomSearchLoading}>
+      <div className='d-flex flex-column gap-2 justify-center flex-sm-row mt-8 gap-sm-4'>
+        <button className='btn btn-secondary rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow'
+          onClick={handleSubmit}>Google Search</button>
+        <button className='btn btn-primary rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm'
+          onClick={randomSearch} disabled={randomSearchLoading}>
           {randomSearchLoading ? 'Loading' : 'I am feeling Lucky'};
         </button>
       </div>
