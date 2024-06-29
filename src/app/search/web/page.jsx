@@ -16,14 +16,16 @@ export default async function WebSearchPage({ searchParams }) {
 
   if (!results) {
     return (
-      <div className=''>
-        <h1 className=''>
+      <div className='d-flex flex-column justify-content-center align-items-center pt-5'>
+        <h1 className='display-3 mb-4'>
           No results found for {searchParams.searchTerm}
         </h1>
 
-        <p className=''>
+        <p className='display-1'>
           Try searching the web or images for something else{' '}
-          <Link href={'/'} className=''> Home </Link>
+          <Link href={'/'} className='text-primary'>
+            Home
+          </Link>
         </p>
       </div>
     );

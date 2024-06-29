@@ -1,4 +1,5 @@
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "@/components/Footer";
 
 export const metadata = {
