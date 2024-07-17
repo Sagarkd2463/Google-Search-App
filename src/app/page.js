@@ -1,12 +1,13 @@
 import HomeHeader from "@/components/HomeHeader";
 import HomeSearch from "@/components/HomeSearch";
 import Image from 'next/image';
+import './globals.css';
 
 export default function Home() {
   return (
     <>
       <HomeHeader />
-      <div className="d-flex flex-column align-items-center mt-5">
+      <div className="">
         <Image
           alt="Google Logo"
           src={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'}

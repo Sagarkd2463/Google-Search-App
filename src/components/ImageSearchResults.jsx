@@ -1,30 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
 import PaginationButtons from './PaginationButtons';
+import '../styles/imageSearch.css';
 
 export default function ImageSearchResults({ results }) {
   return (
-    <div className='pb-5 pb-md-8 mt-4'>
-      <div className='row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 px-3 gx-4'>
+    <div className=''>
+      <div className=''>
         {results.items.map((result) => (
-          <div className='mb-5' key={result.link}>
-            <div className='group'>
+          <div className='' key={result.link}>
+            <div className=''>
               <Link href={result.image.contextLink}>
                 <img
                   src={result.link}
                   alt={result.title}
-                  className='h-60 w-full object-contain transition-shadow duration-300'
+                  className=''
                 />
               </Link>
 
               <Link href={result.image.contextLink}>
-                <h2 className='group-hover:underline text-truncate display-3'>
+                <h2 className=''>
                   {result.title}
                 </h2>
               </Link>
 
               <Link href={result.image.contextLink}>
-                <p className='group-hover:underline text-truncate text-secondary'>
+                <p className=''>
                   {result.displayLink}
                 </p>
               </Link>
@@ -32,7 +33,7 @@ export default function ImageSearchResults({ results }) {
           </div>
         ))}
       </div>
-      <div className='ml-4'>
+      <div className=''>
         <PaginationButtons />
       </div>
     </div>

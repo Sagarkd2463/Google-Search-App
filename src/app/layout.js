@@ -1,5 +1,4 @@
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -10,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="position-relative min-vh-100">
+      <body className="">
         {children}
         <Footer />
       </body>

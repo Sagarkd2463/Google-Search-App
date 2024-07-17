@@ -5,11 +5,12 @@ import SearchBox from './SearchBox';
 import { RiSettings3Line } from 'react-icons/ri';
 import { TbGridDots } from 'react-icons/tb';
 import SearchHeaderOptions from './SearchHeaderOptions';
+import "../styles/searchHeader.css";
 
 export default function SearchHeader() {
   return (
-    <header className='sticky-top bg-white'>
-      <div className='d-flex w-100 p-6 align-items-center justify-content-between'>
+    <header className=''>
+      <div className=''>
         <Link href={'/'}>
           <Image
             alt="Google Logo"
@@ -21,16 +22,16 @@ export default function SearchHeader() {
           />
         </Link>
 
-        <div className='d-flex flex-grow-1'>
+        <div className=''>
           <SearchBox />
         </div>
 
-        <div className='d-none d-md-inline-flex space-x-2'>
-          <RiSettings3Line className='btn btn-outline-secondary bg-transparent hover:bg-gray-200 p-2 fs-4 rounded-circle cursor-pointer' />
-          <TbGridDots className='btn btn-outline-secondary bg-transparent hover:bg-gray-200 p-2 fs-6 rounded-circle cursor-pointer' />
+        <div className=''>
+          <RiSettings3Line className='' />
+          <TbGridDots className='' />
         </div>
 
-        <button className='btn btn-primary px-6 py-2 font-weight-medium rounded-md hover-brightness-105 hover-shadow transition-shadow ml-2'>
+        <button className=''>
           Sign in
         </button>
       </div>

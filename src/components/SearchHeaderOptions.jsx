@@ -3,6 +3,7 @@
 import React from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { AiOutlineCamera, AiOutlineSearch } from 'react-icons/ai';
+import '../styles/searchHeaderOptions.css';
 
 export default function SearchHeaderOptions() {
 
@@ -16,16 +17,16 @@ export default function SearchHeaderOptions() {
   };
 
   return (
-    <div className='d-flex gap-2 user-select-none border-bottom w-100 justify-content-center justify-content-lg-start pl-52 text-muted text-sm'>
-      <div className={`d-flex align-items-center space-x-1 border-bottom border-0 active text-primary cursor-pointer pb-3 px-2 ${pathname === '/search/web' && '!text-primary !border border-primary'}`}
+    <div className=''>
+      <div className={` ${pathname === '/search/web' && ''}`}
         onClick={() => selectTab("All")}>
-        <AiOutlineSearch className='text-md' />
+        <AiOutlineSearch className='' />
         <p>All</p>
       </div>
 
-      <div className={`d-flex align-items-center space-x-1 border-bottom border-0 active text-primary cursor-pointer pb-3 px-2 ${pathname === '/search/image' && '!text-primary !border border-primary'}`}
+      <div className={` ${pathname === '/search/image' && ''}`}
         onClick={() => selectTab("Images")}>
-        <AiOutlineCamera className='text-md' />
+        <AiOutlineCamera className='' />
         <p>Images</p>
       </div>
     </div>

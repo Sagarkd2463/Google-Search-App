@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from 'react';
+import '../globals.css';
 
 export default function Error({ error, reset }) {
 
@@ -9,9 +10,9 @@ export default function Error({ error, reset }) {
   }, [error]);
 
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center pt-5'>
-      <h1 className='display-4 mb-4'>Something went wrong!</h1>
-      <button className='text-primary'>Try again</button>
+    <div className=''>
+      <h1 className=''>Something went wrong!</h1>
+      <button className=''>Try again</button>
     </div>
   );
 };
