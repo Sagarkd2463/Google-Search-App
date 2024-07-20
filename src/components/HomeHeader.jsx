@@ -5,21 +5,26 @@ import '../styles/homeHeader.css';
 
 export default function HomeHeader() {
   return (
-    <header className=''>
-      <div className=''>
+    <header className='header-main'>
+      <div className='header-sub'>
         <Link href={"https://mail.google.com"}
-          className=''>
+          className='sub-one'>
           Gmail
         </Link>
 
         <Link href={"https://image.google.com"}
-          className=''>
+          className='sub-two'>
           Images
         </Link>
 
-        <TbGridDots className='' />
+        <Link href={"https://labs.google.com"}
+          className='sub-three'>
+          Search Labs
+        </Link>
 
-        <button className=''>Sign in</button>
+        <TbGridDots className='sub-four' />
+
+        <button className='sub-five'>Sign in</button>
       </div>
     </header>
   );

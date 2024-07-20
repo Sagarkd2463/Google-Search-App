@@ -6,25 +6,25 @@ import '../styles/webSearch.css';
 
 export default function WebSearchResults({ results }) {
   return (
-    <div className=''>
-      <p className=''>
+    <div className='result-main'>
+      <p className='result-about'>
         About {results.searchInformation?.formattedTotalResults} results
         ({results.searchInformation?.formattedSearchTime} seconds)
       </p>
 
       {
         results.items?.map((result) => (
-          <div className='' key={result.link}>
-            <div className=''>
+          <div className='result-sub' key={result.link}>
+            <div className='result-link'>
               <Link href={result.link}>
                 {result.formattedUrl}
               </Link>
 
-              <Link href={result.link} className=''>
+              <Link href={result.link} className='result-title'>
                 {result.title}
               </Link>
             </div>
-            <p className=''>{Parser(result.htmlSnippet)}</p>
+            <p className='result-end'>{Parser(result.htmlSnippet)}</p>
           </div>
         ))}
       <PaginationButtons />

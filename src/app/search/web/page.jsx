@@ -1,6 +1,7 @@
 import WebSearchResults from '@/components/WebSearchResults';
 import Link from 'next/link';
 import React from 'react';
+import './style.css';
 
 export default async function WebSearchPage({ searchParams }) {
 
@@ -16,14 +17,14 @@ export default async function WebSearchPage({ searchParams }) {
 
   if (!results) {
     return (
-      <div className=''>
-        <h1 className=''>
+      <div className='no-result'>
+        <h1 className='no-result-title'>
           No results found for {searchParams.searchTerm}
         </h1>
 
-        <p className=''>
+        <p className='searching'>
           Try searching the web or images for something else{' '}
-          <Link href={'/'} className=''>
+          <Link href={'/'} className='home'>
             Home
           </Link>
         </p>

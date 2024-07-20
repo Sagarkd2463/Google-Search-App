@@ -32,16 +32,16 @@ export default function HomeSearch() {
 
   return (
     <>
-      <form className=''
+      <form className='form-main'
         onSubmit={handleSubmit}>
-        <AiOutlineSearch className='' />
-        <input type="text" className='' onChange={(e) => setInput(e.target.value)} />
-        <BsFillMicFill className='' />
+        <AiOutlineSearch className='search-icon' />
+        <input type="text" className='text-input' onChange={(e) => setInput(e.target.value)} />
+        <BsFillMicFill className='voice-icon' />
       </form>
-      <div className=''>
-        <button className=''
+      <div className='search-sub'>
+        <button className='search-btn'
           onClick={handleSubmit}>Google Search</button>
-        <button className=''
+        <button className='random-btn'
           onClick={randomSearch} disabled={randomSearchLoading}>
           {randomSearchLoading ? 'Loading' : 'I am feeling Lucky'};
         </button>

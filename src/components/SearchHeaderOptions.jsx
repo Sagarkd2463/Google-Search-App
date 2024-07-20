@@ -17,16 +17,16 @@ export default function SearchHeaderOptions() {
   };
 
   return (
-    <div className=''>
-      <div className={` ${pathname === '/search/web' && ''}`}
+    <div className='search-options'>
+      <div className={`search-tab-one ${pathname === '/search/web' && ''}`}
         onClick={() => selectTab("All")}>
-        <AiOutlineSearch className='' />
+        <AiOutlineSearch className='search-icon' />
         <p>All</p>
       </div>
 
-      <div className={` ${pathname === '/search/image' && ''}`}
+      <div className={`search-tab-two ${pathname === '/search/image' && ''}`}
         onClick={() => selectTab("Images")}>
-        <AiOutlineCamera className='' />
+        <AiOutlineCamera className='camera-icon' />
         <p>Images</p>
       </div>
     </div>

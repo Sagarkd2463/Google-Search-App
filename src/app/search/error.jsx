@@ -10,9 +10,9 @@ export default function Error({ error, reset }) {
   }, [error]);
 
   return (
-    <div className=''>
-      <h1 className=''>Something went wrong!</h1>
-      <button className=''>Try again</button>
+    <div className='error'>
+      <h1 className='message'>Something went wrong!</h1>
+      <button className='error-btn'>Try again</button>
     </div>
   );
 };

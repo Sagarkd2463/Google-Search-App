@@ -5,27 +5,27 @@ import '../styles/imageSearch.css';
 
 export default function ImageSearchResults({ results }) {
   return (
-    <div className=''>
-      <div className=''>
+    <div className='image-main'>
+      <div className='image-sub'>
         {results.items.map((result) => (
-          <div className='' key={result.link}>
-            <div className=''>
+          <div className='results' key={result.link}>
+            <div className='results-sub'>
               <Link href={result.image.contextLink}>
                 <img
                   src={result.link}
                   alt={result.title}
-                  className=''
+                  className='result-img'
                 />
               </Link>
 
               <Link href={result.image.contextLink}>
-                <h2 className=''>
+                <h2 className='result-title'>
                   {result.title}
                 </h2>
               </Link>
 
               <Link href={result.image.contextLink}>
-                <p className=''>
+                <p className='result-link'>
                   {result.displayLink}
                 </p>
               </Link>
@@ -33,7 +33,7 @@ export default function ImageSearchResults({ results }) {
           </div>
         ))}
       </div>
-      <div className=''>
+      <div className='pagination'>
         <PaginationButtons />
       </div>
     </div>

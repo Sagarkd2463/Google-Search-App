@@ -21,19 +21,19 @@ export default function SearchBox() {
   };
 
   return (
-    <form className=''
+    <form className='searchbox'
       onSubmit={handleSubmit}>
       <input
         type="text"
-        className=''
+        className='search-term'
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
-      <RxCross2 className=''
+      <RxCross2 className='cross-icon'
         onClick={() => setTerm('')}
       />
-      <BsFillMicFill className='' />
-      <AiOutlineSearch className=''
+      <BsFillMicFill className='voice-icon' />
+      <AiOutlineSearch className='search-icon'
         onClick={handleSubmit}
       />
     </form>

@@ -9,8 +9,8 @@ import "../styles/searchHeader.css";
 
 export default function SearchHeader() {
   return (
-    <header className=''>
-      <div className=''>
+    <header className='search-header'>
+      <div className='search-sub'>
         <Link href={'/'}>
           <Image
             alt="Google Logo"
@@ -22,16 +22,16 @@ export default function SearchHeader() {
           />
         </Link>
 
-        <div className=''>
+        <div className='searchBox'>
           <SearchBox />
         </div>
 
-        <div className=''>
-          <RiSettings3Line className='' />
-          <TbGridDots className='' />
+        <div className='search-items'>
+          <RiSettings3Line className='settings' />
+          <TbGridDots className='dots' />
         </div>
 
-        <button className=''>
+        <button className='sign-in-btn'>
           Sign in
         </button>
       </div>

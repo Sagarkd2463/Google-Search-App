@@ -14,12 +14,12 @@ export default function PaginationButtons() {
   const startIndex = +searchParams.get('start') || 1;
 
   return (
-    <div className=''>
+    <div className='page-main'>
       {
         startIndex >= 10 && (
           <Link href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex - 10}`}>
-            <div className=''>
-              <BsChevronLeft className='' />
+            <div className='page-one'>
+              <BsChevronLeft className='previous' />
               <p>Previous</p>
             </div>
           </Link>
@@ -28,8 +28,8 @@ export default function PaginationButtons() {
       {
         startIndex <= 90 && (
           <Link href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex + 10}`}>
-            <div className=''>
-              <BsChevronRight className='' />
+            <div className='page-two'>
+              <BsChevronRight className='next' />
               <p>Next</p>
             </div>
           </Link>

@@ -1,0 +1,40 @@
+.search-options {
+    display: flex;
+    margin-left: 0.5rem;
+    justify-content: center;
+    border-bottom-width: 1px;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #374151;
+    user-select: none;
+
+    @media (min-width: 1024px) {
+        padding-left: 13rem;
+        justify-content: flex-start;
+    }
+}
+
+.search-tab-one {
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.75rem;
+    margin-left: 0.25rem;
+    align-items: center;
+    border-bottom-width: 4px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.search-tab-two {
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.75rem;
+    margin-left: 0.25rem;
+    align-items: center;
+    border-bottom-width: 4px;
+    border-color: transparent;
+    cursor: pointer;
+}

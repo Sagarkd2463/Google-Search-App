@@ -1,0 +1,55 @@
+.result-main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 10rem;
+    width: 100%;
+
+    @media (min-width: 640px) {
+        padding-bottom: 6rem;
+        padding-left: 5%;
+    }
+
+    @media (min-width: 768px) {
+        padding-left: 14%;
+    }
+
+    @media (min-width: 1024px) {
+        padding-left: 13rem;
+    }
+}
+
+.result-about {
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #4B5563;
+}
+
+.result-sub {
+    margin-bottom: 2rem;
+    max-width: 36rem;
+}
+
+.result-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #1E40AF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-end {
+    color: #4B5563;
+}

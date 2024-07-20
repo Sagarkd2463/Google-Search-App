@@ -1,0 +1,43 @@
+.page-main {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    color: #1D4ED8;
+
+    @media (min-width: 640px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 11rem;
+        justify-content: flex-start;
+    }
+}
+
+.page-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-one:hover {
+    text-decoration: underline;
+}
+
+.previous {
+    height: 1.25rem;
+}
+
+.page-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-two:hover {
+    text-decoration: underline;
+}
+
+.next {
+    height: 1.25rem;
+}
