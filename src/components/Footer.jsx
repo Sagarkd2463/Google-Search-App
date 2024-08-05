@@ -14,7 +14,7 @@ export default function Footer() {
           <li className='list'>About</li>
           <li className='list'>Advertising</li>
           <li className='list'>Business</li>
-          <li className=''>How Search Works</li>
+          <li className='list'>How Search Works</li>
         </ul>
 
         <ul className='footer-two'>

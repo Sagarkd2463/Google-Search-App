@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { TbGridDots } from 'react-icons/tb';
+import { SlChemistry } from "react-icons/sl";
 import '../styles/homeHeader.css';
 
 export default function HomeHeader() {
@@ -17,9 +18,8 @@ export default function HomeHeader() {
           Images
         </Link>
 
-        <Link href={"https://labs.google.com"}
-          className='sub-three'>
-          Search Labs
+        <Link href={"https://labs.google.com"}>
+          <SlChemistry className='labs-icon' values='Search Labs' />
         </Link>
 
         <TbGridDots className='sub-four' />
