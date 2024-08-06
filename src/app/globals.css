@@ -1,13 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .main-page{
     position: relative; 
     min-height: 100vh;   
 }
 
 .logo-img{
-    display: flex; 
-    margin-top: 6rem; 
-    flex-direction: column; 
-    align-items: center;      
+    display: flex;
+    flex-direction: column;
 }
 
 .error{

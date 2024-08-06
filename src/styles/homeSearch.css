@@ -13,9 +13,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
     max-width: 90%;
+    align-items: center;
+    justify-content: center;
 
     @media (min-width: 640px) {
-        max-width: 36rem;
+        max-width: 36rem;   
     }
 
     @media (min-width: 1024px) {
