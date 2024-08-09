@@ -1,33 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main-page{
-    position: relative; 
-    min-height: 100vh;   
-}
-
-.logo-img{
+.main-page {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
 }
 
-.error{
-    display: flex; 
-    padding-top: 2.5rem; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .main-page {
+        padding: 10px;
+        justify-content: flex-start;
+    }
 }
 
-.message{
-    margin-bottom: 1rem; 
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .main-page {
+        padding: 15px;
+        justify-content: center;
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .main-page {
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Extra Large devices (screens wider than 1440px) */
+@media (min-width: 1440px) {
+    .main-page {
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.logo-img {
+    margin-bottom: 2.5rem;
+    margin-top: 5.38rem;
+}
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .logo-img {
+        margin-bottom: 1.5rem;
+        margin-top: -5rem;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logo-img {
+        margin-bottom: 2rem;
+        margin-top: -7rem;
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .logo-img {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Extra Large devices (screens wider than 1440px) */
+@media (min-width: 1440px) {
+    .logo-img {
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+        max-width: 300px;
+    }
+}
+
+.error {
+    display: flex;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-bottom: 1rem;
     font-size: 1.875rem;
-    line-height: 2.25rem;       
+    line-height: 2.25rem;
 }
 
-.error-btn{
-    color: #3B82F6;   
+.error-btn {
+    color: #3B82F6;
 }

@@ -7,14 +7,15 @@ export default function Home() {
   return (
     <>
       <HomeHeader />
-        <Image
-          alt="Google Logo"
-          src={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'}
-          width={300}
-          height={100}
-          priority
-          className="logo-img"
-        />
+      <Image
+        alt="Google Logo"
+        src={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'}
+        width={300}
+        height={100}
+        priority="true"
+        className="logo-img"
+        style={{ width: 'auto' }}
+      />
       <HomeSearch />
     </>
   );

@@ -5,11 +5,10 @@
 }
 
 .header-main {
-    display: flex;
-    padding: 1.25rem;
-    justify-content: flex-end;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
 }
 
 /* Responsive adjustments */
