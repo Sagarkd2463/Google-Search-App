@@ -11,14 +11,7 @@
     padding: 10px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .header-main {
-        justify-content: center;
-        padding: 1rem;
-    }
-}
-
+/* Responsive adjustments for all screen sizes */
 .header-sub {
     display: flex;
     margin-left: 1rem;
@@ -81,31 +74,17 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-/* Additional responsive adjustments */
-@media (max-width: 768px) {
-    .header-sub {
-        margin-left: 0.5rem;
-    }
-
-    .sub-four {
-        font-size: 1.75rem;
-        line-height: 2rem;
-    }
-
-    .sub-five {
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
+/* Extra Small devices (320px) */
+@media (max-width: 320px) {
     .header-main {
         flex-direction: column;
         align-items: center;
+        padding: 0.5rem;
     }
 
     .header-sub {
         margin-left: 0;
-        margin-top: 0.5rem;
+        margin-top: 0.25rem;
     }
 
     .sub-four {
@@ -114,6 +93,133 @@
     }
 
     .sub-five {
-        padding: 0.5rem 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+}
+
+/* Small devices (375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .header-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.75rem;
+    }
+
+    .header-sub {
+        margin-left: 0;
+        margin-top: 0.25rem;
+    }
+
+    .sub-four {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .sub-five {
+        padding: 0.45rem 1rem;
+    }
+}
+
+/* Small devices (425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+    .header-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-sub {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .sub-four {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    .sub-five {
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+/* Medium devices (768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .header-main {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .header-sub {
+        margin-left: 0.5rem;
+    }
+
+    .sub-four {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Large devices (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-main {
+        padding: 1rem 1.5rem;
+    }
+
+    .header-sub {
+        margin-left: 1rem;
+    }
+
+    .sub-four {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.55rem 1.75rem;
+    }
+}
+
+/* Extra Large devices (1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header-main {
+        padding: 1.25rem 2rem;
+    }
+
+    .header-sub {
+        margin-left: 1.5rem;
+    }
+
+    .sub-four {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.6rem 2rem;
+    }
+}
+
+/* Extra extra large devices (screens wider than 1440px) */
+@media (min-width: 1441px) {
+    .header-main {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .header-sub {
+        margin-left: 2rem;
+    }
+
+    .sub-four {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    .sub-five {
+        padding: 0.7rem 2.5rem;
     }
 }
