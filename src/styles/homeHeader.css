@@ -87,13 +87,19 @@
         margin-top: 0.25rem;
     }
 
+    .sub-one,
+    .sub-two {
+        font-size: 1.0rem;
+    }
+
     .sub-four {
-        font-size: 1.5rem;
+        font-size: 2.0rem;
         line-height: 1.75rem;
     }
 
     .sub-five {
-        padding: 0.4rem 0.75rem;
+        padding: 0.5rem 0.65rem;
+        font-weight: 400;
     }
 }
 

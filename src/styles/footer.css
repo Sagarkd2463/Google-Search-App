@@ -16,14 +16,59 @@
 }
 
 .country {
-    padding: 0.75rem 2rem;
-    border-bottom-width: 1px;
+    position: relative;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1440px) {
+    .country {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .country {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .country {
+        max-width: 700px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .country {
+        max-width: 400px;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .country {
+        max-width: 350px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .country {
+        max-width: 300px;
+        padding: 4px;
+    }
 }
 
 .main {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-one,
@@ -52,13 +97,13 @@
     }
 
     .main {
-        padding: 0.5rem 1rem;
-        margin-top: 1.5rem;
+        justify-content: space-evenly;
     }
 
     .footer-one,
     .footer-two {
         margin-left: 0.5rem;
+        justify-content: space-around;
     }
 }
 
@@ -72,11 +117,13 @@
     .main {
         padding: 0.75rem 1.5rem;
         margin-top: 1.75rem;
+        justify-content: space-evenly;
     }
 
     .footer-one,
     .footer-two {
         margin-left: 1rem;
+        justify-content: space-around;
     }
 }
 
@@ -90,11 +137,13 @@
     .main {
         padding: 0.75rem 1.75rem;
         margin-top: 2rem;
+        justify-content: space-evenly;
     }
 
     .footer-one,
     .footer-two {
         margin-left: 1.25rem;
+        justify-content: space-around;
     }
 }
 
@@ -114,6 +163,7 @@
     .footer-one,
     .footer-two {
         margin-left: 1.5rem;
+        justify-content: space-around;
     }
 }
 
@@ -133,6 +183,7 @@
     .footer-one,
     .footer-two {
         margin-left: 2rem;
+        justify-content: space-around;
     }
 }
 
@@ -154,6 +205,7 @@
     .footer-one,
     .footer-two {
         margin-left: 2.5rem;
+        justify-content: space-around;
     }
 }
 
@@ -175,5 +227,6 @@
     .footer-one,
     .footer-two {
         margin-left: 3rem;
+        justify-content: space-around;
     }
 }
