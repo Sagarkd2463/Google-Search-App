@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .form-main {
@@ -58,7 +59,7 @@
     .search-icon,
     .voice-icon {
         font-size: 0.75rem;
-        margin-right: 0.3rem;
+        margin-right: 0.35rem;
     }
 
     .text-input::placeholder {
@@ -69,7 +70,12 @@
     .random-btn {
         width: 8rem;
         height: 2.5rem;
-        font-size: 0.75rem;
+        font-size: 0.80rem;
+        border: none;
+        margin-right: 10px;
+        border-radius: 50px;
+        background-color: #3B82F4;
+        color: #ffffff;
     }
 }
 
@@ -84,7 +90,6 @@
     .search-icon,
     .voice-icon {
         font-size: 0.875rem;
-        margin-right: 0.35rem;
     }
 
     .text-input::placeholder {
@@ -93,9 +98,14 @@
 
     .search-btn,
     .random-btn {
-        width: 8.5rem;
+        width: 8.25rem;
         height: 2.5rem;
         font-size: 0.8rem;
+        border: none;
+        margin-right: 10px;
+        border-radius: 50px;
+        background-color: #3B82F4;
+        color: #ffffff;
     }
 }
 

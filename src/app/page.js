@@ -10,7 +10,7 @@ export default function Home() {
       <Image
         alt="Google Logo"
         src={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'}
-        width={300}
+        width={200}
         height={100}
         priority="true"
         className="logo-img"

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header-main {
@@ -9,6 +10,7 @@
     top: 0;
     right: 0;
     padding: 10px;
+    display: flex;
 }
 
 /* Responsive adjustments for all screen sizes */
@@ -116,13 +118,19 @@
         margin-top: 0.25rem;
     }
 
+    .sub-one,
+    .sub-two {
+        font-size: 1.05rem;
+    }
+
     .sub-four {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         line-height: 2rem;
     }
 
     .sub-five {
-        padding: 0.45rem 1rem;
+        padding: 0.5rem 0.80rem;
+        font-weight: 400;
     }
 }
 

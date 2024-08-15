@@ -21,6 +21,7 @@ export default function Footer() {
           <li className='list'>Privacy</li>
           <li className='list'>Terms</li>
           <li className='list'>Settings</li>
+          <li className='list'>News</li>
         </ul>
       </div>
     </footer>
