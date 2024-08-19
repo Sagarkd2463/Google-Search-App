@@ -27,15 +27,22 @@
     box-sizing: border-box;
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .country {
+        max-width: 2400px;
+        padding: 12px;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     .country {
-        max-width: 1200px;
+        max-width: 1400px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .country {
-        max-width: 900px;
+        max-width: 920px;
     }
 }
 
@@ -151,13 +158,13 @@
 /* Medium devices (768px) */
 @media (min-width: 426px) and (max-width: 768px) {
     .footer {
-        font-size: 0.9rem;
-        padding: 1rem 2.5rem;
+        font-size: 0.85rem;
+        padding: 0.25rem 1.25rem;
     }
 
     .main {
-        padding: 1rem 2.5rem;
-        margin-top: 1.5rem;
+        padding: 0.25rem 1.25rem;
+        margin-top: -0.5rem;
         justify-content: space-evenly;
     }
 
@@ -172,12 +179,12 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .footer {
         font-size: 1rem;
-        padding: 1.25rem 3rem;
+        padding: 0.5rem 1.5rem;
     }
 
     .main {
-        padding: 1.25rem 3rem;
-        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+        margin-top: 0rem;
         justify-content: space-evenly;
     }
 
@@ -192,11 +199,11 @@
 @media (min-width: 1025px) and (max-width: 1440px) {
     .footer {
         font-size: 1.1rem;
-        padding: 1.5rem 3.5rem;
+        padding: 1.25rem 3.25rem;
     }
 
     .main {
-        padding: 1.5rem 3.5rem;
+        padding: 1.0rem 2rem;
         margin-top: 0.5rem;
         flex-direction: row;
         align-items: center;
@@ -210,16 +217,16 @@
     }
 }
 
-/* Extra extra large devices (screens wider than 1440px) */
-@media (min-width: 1441px) {
+/* Extra extra large devices (2560px) */
+@media (min-width: 1441px) and (max-width: 2560px) {
     .footer {
         font-size: 1.2rem;
-        padding: 1.75rem 4rem;
+        padding: 1.5rem 4rem;
     }
 
     .main {
-        padding: 1.75rem 4rem;
-        margin-top: 0;
+        padding: 1.5rem 4rem;
+        margin-top: 2rem;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
@@ -228,6 +235,6 @@
     .footer-one,
     .footer-two {
         margin-left: 3rem;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
