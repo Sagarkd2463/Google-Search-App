@@ -52,13 +52,13 @@
 @media (max-width: 320px) {
     .form-main {
         max-width: 100%;
-        padding: 0.55rem 0.85rem;
-        font-size: 0.75rem;
+        padding: 0.55rem 0.8rem;
+        font-size: 0.9rem;
     }
 
     .search-icon,
     .voice-icon {
-        font-size: 0.75rem;
+        font-size: 1rem;
         margin-right: 0.35rem;
     }
 
@@ -68,9 +68,9 @@
 
     .search-btn,
     .random-btn {
-        width: 8rem;
-        height: 2.5rem;
-        font-size: 0.80rem;
+        width: 8.25rem;
+        height: 2.35rem;
+        font-size: 0.65rem;
         border: none;
         margin-right: 10px;
         border-radius: 50px;
@@ -83,24 +83,25 @@
 @media (min-width: 321px) and (max-width: 375px) {
     .form-main {
         max-width: 100%;
-        padding: 0.6rem 0.95rem;
-        font-size: 0.8rem;
+        padding: 0.45rem 0.6rem;
+        font-size: 0.75rem;
     }
 
     .search-icon,
     .voice-icon {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+        margin-right: 0.25rem;
     }
 
     .text-input::placeholder {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 
     .search-btn,
     .random-btn {
-        width: 8.25rem;
-        height: 2.5rem;
-        font-size: 0.8rem;
+        width: 8.05rem;
+        height: 2.15rem;
+        font-size: 0.55rem;
         border: none;
         margin-right: 10px;
         border-radius: 50px;
@@ -113,25 +114,30 @@
 @media (min-width: 376px) and (max-width: 425px) {
     .form-main {
         max-width: 100%;
-        padding: 0.65rem 1rem;
+        padding: 0.55rem 0.8rem;
         font-size: 0.9rem;
     }
 
     .search-icon,
     .voice-icon {
         font-size: 1rem;
-        margin-right: 0.4rem;
+        margin-right: 0.35rem;
     }
 
     .text-input::placeholder {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .search-btn,
     .random-btn {
-        width: 9rem;
-        height: 2.75rem;
-        font-size: 0.85rem;
+        width: 8.25rem;
+        height: 2.35rem;
+        font-size: 0.65rem;
+        border: none;
+        margin-right: 10px;
+        border-radius: 50px;
+        background-color: #3B82F4;
+        color: #ffffff;
     }
 }
 

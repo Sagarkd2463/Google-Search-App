@@ -100,18 +100,20 @@
 /* Small devices (320px) */
 @media (max-width: 320px) {
     .footer {
-        font-size: 0.7rem;
-        padding: 0.5rem 1.5rem;
+        font-size: 0.55rem;
+        padding: 0rem 0.5rem;
     }
 
     .main {
-        margin-top: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        margin-top: -0.5rem;
         justify-content: space-evenly;
     }
 
     .footer-one,
     .footer-two {
         margin-left: 0.5rem;
+        margin-top: 0.25rem;
         justify-content: space-around;
     }
 }
@@ -119,18 +121,20 @@
 /* Small devices (375px) */
 @media (min-width: 321px) and (max-width: 375px) {
     .footer {
-        font-size: 0.75rem;
-        padding: 0.75rem 2rem;
+        font-size: 0.60rem;
+        padding: 0.35rem 1rem;
     }
 
     .main {
-        margin-top: 0.75rem;
+        padding: 0.30rem 1rem;
+        margin-top: -1.5rem;
         justify-content: space-evenly;
     }
 
     .footer-one,
     .footer-two {
-        margin-left: 1rem;
+        margin-left: 1.05rem;
+        margin-top: 0.5rem;
         justify-content: space-around;
     }
 }
@@ -138,13 +142,13 @@
 /* Small devices (425px) */
 @media (min-width: 376px) and (max-width: 425px) {
     .footer {
-        font-size: 0.8rem;
-        padding: 0.75rem 2rem;
+        font-size: 0.75rem;
+        padding: 0.65rem 1.5rem;
     }
 
     .main {
-        padding: 0.75rem 1.75rem;
-        margin-top: 2rem;
+        padding: 0.5rem 1.25rem;
+        margin-top: -1rem;
         justify-content: space-evenly;
     }
 

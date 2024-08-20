@@ -78,81 +78,108 @@
 /* Extra Small devices (320px) */
 @media (max-width: 320px) {
     .header-main {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem;
+        padding: 0.5rem 0.95rem;
     }
 
     .header-sub {
-        margin-left: 0;
-        margin-top: 0.25rem;
+        margin-left: 1rem;
     }
 
     .sub-one,
     .sub-two {
-        font-size: 1.0rem;
+        font-size: 0.75rem;
+    }
+
+    .labs-icon {
+        padding: 0.48rem;
+        border-radius: 9999px;
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
     }
 
     .sub-four {
-        font-size: 2.0rem;
-        line-height: 1.75rem;
+        font-size: 1.70rem;
+        line-height: 2.5rem;
     }
 
     .sub-five {
-        padding: 0.5rem 0.65rem;
-        font-weight: 400;
+        padding: 0.15rem 1rem;
+        font-weight: 200;
+        font-size: 0.55rem;
     }
 }
 
 /* Small devices (375px) */
 @media (min-width: 321px) and (max-width: 375px) {
     .header-main {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.75rem;
+        padding: 0.6rem 1.05rem
     }
 
     .header-sub {
-        margin-left: 0;
-        margin-top: 0.25rem;
+        margin-left: 1rem;
     }
 
     .sub-one,
     .sub-two {
-        font-size: 1.05rem;
+        font-size: 0.75rem;
+    }
+
+    .labs-icon {
+        padding: 0.5rem;
+        border-radius: 9999px;
+        font-size: 1.95rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
     }
 
     .sub-four {
-        font-size: 2.25rem;
-        line-height: 2rem;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
     }
 
     .sub-five {
-        padding: 0.5rem 0.80rem;
-        font-weight: 400;
+        padding: 0.25rem 1rem;
+        font-weight: 200;
+        font-size: 0.75rem;
     }
 }
 
 /* Small devices (425px) */
 @media (min-width: 376px) and (max-width: 425px) {
     .header-main {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
+        padding: 0.8rem 1.2rem;
     }
 
     .header-sub {
-        margin-left: 0;
-        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 0.95rem;
+    }
+
+    .labs-icon {
+        padding: 0.40rem;
+        border-radius: 9999px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
     }
 
     .sub-four {
-        font-size: 2rem;
-        line-height: 2.25rem;
+        font-size: 1.85rem;
+        line-height: 2.5rem;
     }
 
     .sub-five {
-        padding: 0.5rem 1.25rem;
+        padding: 0.30rem 1.25rem;
+        font-weight: 400;
+        font-size: 0.8rem;
     }
 }
 
@@ -188,6 +215,7 @@
     .sub-five {
         padding: 0.40rem 1.50rem;
         font-weight: 500;
+        font-size: 0.85rem;
     }
 }
 
@@ -223,6 +251,7 @@
     .sub-five {
         padding: 0.45rem 1.55rem;
         font-weight: 500;
+        font-size: 0.9rem;
     }
 }
 
@@ -258,6 +287,7 @@
     .sub-five {
         padding: 0.7rem 2.5rem;
         font-weight: 500;
+        font-size: 0.95rem;
     }
 }
 
