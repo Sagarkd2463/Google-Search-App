@@ -147,8 +147,78 @@
     }
 }
 
+@media (min-width: 375px) {
+    .header-main {
+        padding: 0.6rem 1.05rem
+    }
+
+    .header-sub {
+        margin-left: 1rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 0.75rem;
+    }
+
+    .labs-icon {
+        padding: 0.5rem;
+        border-radius: 9999px;
+        font-size: 1.95rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.25rem 1rem;
+        font-weight: 200;
+        font-size: 0.75rem;
+    }
+}
+
 /* Small devices (425px) */
 @media (min-width: 376px) and (max-width: 425px) {
+    .header-main {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .header-sub {
+        margin-left: 1rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 0.95rem;
+    }
+
+    .labs-icon {
+        padding: 0.40rem;
+        border-radius: 9999px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 1.85rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.30rem 1.25rem;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 425px) {
     .header-main {
         padding: 0.8rem 1.2rem;
     }
@@ -219,8 +289,78 @@
     }
 }
 
+@media (min-width: 768px) {
+    .header-main {
+        padding: 1.1rem 1.5rem;
+    }
+
+    .header-sub {
+        margin-left: 1rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 1rem;
+    }
+
+    .labs-icon {
+        padding: 0.45rem;
+        border-radius: 9999px;
+        font-size: 2.05rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.40rem 1.50rem;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+}
+
 /* Large devices (1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .header-main {
+        padding: 1.25rem 2.0rem;
+    }
+
+    .header-sub {
+        margin-left: 1rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 1.1rem;
+    }
+
+    .labs-icon {
+        padding: 0.5rem;
+        border-radius: 9999px;
+        font-size: 2.35rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 2.0rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.45rem 1.55rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
     .header-main {
         padding: 1.25rem 2.0rem;
     }
@@ -291,8 +431,78 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .header-main {
+        padding: 1.5rem 3rem;
+    }
+
+    .header-sub {
+        margin-left: 1.5rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 1.2rem;
+    }
+
+    .labs-icon {
+        padding: 0.4rem;
+        border-radius: 9999px;
+        font-size: 2.45rem;
+        line-height: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 2.45rem;
+        line-height: 2.5rem;
+    }
+
+    .sub-five {
+        padding: 0.7rem 2.5rem;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+}
+
 /* Extra Extra Large devices (2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
+    .header-main {
+        padding: 1.5rem 3rem;
+    }
+
+    .header-sub {
+        margin-left: 1.8rem;
+    }
+
+    .sub-one,
+    .sub-two {
+        font-size: 1.25rem;
+    }
+
+    .labs-icon {
+        padding: 0.45rem;
+        border-radius: 9999px;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .sub-four {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    .sub-five {
+        padding: 0.7rem 2rem;
+        font-weight: 500;
+        font-size: 0.98rem;
+    }
+}
+
+@media (min-width: 2560px) {
     .header-main {
         padding: 2rem 4rem;
     }
@@ -322,6 +532,7 @@
 
     .sub-five {
         padding: 0.85rem 3rem;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 1.1rem;
     }
 }

@@ -30,8 +30,22 @@
     }
 }
 
+@media (min-width: 375px) {
+    .main-page {
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
 /* Small devices (425px) */
 @media (min-width: 376px) and (max-width: 425px) {
+    .main-page {
+        padding: 12px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 425px) {
     .main-page {
         padding: 12px;
         justify-content: center;
@@ -46,8 +60,22 @@
     }
 }
 
+@media (min-width: 768px) {
+    .main-page {
+        padding: 15px;
+        justify-content: center;
+    }
+}
+
 /* Medium devices (1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .main-page {
+        padding: 20px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
     .main-page {
         padding: 20px;
         justify-content: center;
@@ -63,8 +91,24 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .main-page {
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* Extra Extra Large devices (2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
+    .main-page {
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 2560px) {
     .main-page {
         padding: 40px;
         justify-content: center;
@@ -93,8 +137,22 @@
     }
 }
 
+@media (min-width: 375px) {
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+}
+
 /* Small devices (425px) */
 @media (min-width: 376px) and (max-width: 425px) {
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+}
+
+@media (min-width: 425px) {
     .logo-img {
         margin-bottom: 0.5rem;
         margin-top: -6rem;
@@ -109,8 +167,22 @@
     }
 }
 
+@media (min-width: 768px) {
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -5rem;
+    }
+}
+
 /* Medium devices (1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -7rem;
+    }
+}
+
+@media (min-width: 1024px) {
     .logo-img {
         margin-bottom: 0.5rem;
         margin-top: -7rem;
@@ -125,8 +197,22 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .logo-img {
+        margin-bottom: 0rem;
+        margin-top: -5rem;
+    }
+}
+
 /* Extra Extra Large devices (2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
+    .logo-img {
+        margin-bottom: 0rem;
+        margin-top: -7rem;
+    }
+}
+
+@media (min-width: 2560px) {
     .logo-img {
         margin-bottom: -1rem;
         margin-top: -7rem;
