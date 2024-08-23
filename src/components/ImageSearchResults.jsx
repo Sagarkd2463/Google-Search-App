@@ -12,7 +12,7 @@ export default function ImageSearchResults({ results }) {
             <div className='results-sub'>
               <Link href={result.image.contextLink}>
                 <img
-                  src={result.link}
+                  src={result.image.thumbnailLink}
                   alt={result.title}
                   className='result-img'
                 />
@@ -38,6 +38,6 @@ export default function ImageSearchResults({ results }) {
       </div>
     </div>
   );
-};
+}
 
 
