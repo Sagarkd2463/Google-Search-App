@@ -19,6 +19,7 @@ export default function SearchHeader() {
             height={40}
             priority
             style={{ width: 'auto' }}
+            className='img-google'
           />
         </Link>
 
