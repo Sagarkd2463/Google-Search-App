@@ -49,7 +49,7 @@
 @media (max-width: 320px) {
     .searchbox {
         padding: 0.5rem 1rem;
-        margin: 0 0.75rem;
+        margin: 0px 0.75rem;
     }
 
     .cross-icon {
