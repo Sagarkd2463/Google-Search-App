@@ -61,9 +61,10 @@
 
 @media (min-width: 2560px) {
     .search-options {
-        padding-left: 20rem;
+        padding-left: 15rem;
         font-size: 1rem;
         justify-content: flex-start;
+        margin-top: 1rem;
     }
 }
 
@@ -161,10 +162,10 @@
 
     .search-tab-one,
     .search-tab-two {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        padding-bottom: 1rem;
-        margin-left: 0.4rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+        padding-bottom: 2rem;
+        margin-left: 1.4rem;
     }
 }
 

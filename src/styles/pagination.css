@@ -75,8 +75,8 @@
     .page-main {
         padding-left: 0;
         padding-right: 0;
-        margin-left: 12rem;
-        justify-content: flex-start;
+        margin-left: 10rem;
+        justify-content: space-between;
     }
 }
 

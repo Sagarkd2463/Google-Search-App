@@ -1,6 +1,6 @@
 .searchbox {
     display: flex;
-    padding: 0.75rem 1.5rem;
+    padding: 0rem 60rem;
     margin: 0 1.25rem;
     flex-grow: 1;
     align-items: center;
@@ -12,11 +12,15 @@
 
 .search-term {
     width: 100%;
+    border: none;
 }
 
 .search-term:focus {
     outline: none;
-    border: none;
+}
+
+.search-term::placeholder {
+    font-size: 1rem;
 }
 
 .cross-icon {
@@ -27,7 +31,7 @@
 }
 
 .voice-icon {
-    display: none;
+    display: flex;
     padding-left: 1rem;
     margin-right: 0.75rem;
     border-left-width: 2px;
@@ -38,7 +42,7 @@
 }
 
 .search-icon {
-    display: none;
+    display: flex;
     font-size: 1.5rem;
     line-height: 2rem;
     color: #3B82F6;
@@ -48,8 +52,8 @@
 /* 320px */
 @media (max-width: 320px) {
     .searchbox {
-        padding: 0.5rem 1rem;
-        margin: 0px 0.75rem;
+        padding: 0rem 4rem;
+        margin: 4px 1rem;
     }
 
     .cross-icon {
@@ -192,8 +196,8 @@
 
 @media (min-width: 2560px) {
     .searchbox {
-        padding: 1.5rem 3rem;
-        margin: 0 3rem;
+        padding: 0rem 65rem;
+        margin: 0 1rem;
     }
 
     .cross-icon {

@@ -55,7 +55,7 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .image-main {
-        padding-bottom: 2rem;
+        padding-bottom: 0rem;
     }
 }
 
@@ -119,12 +119,13 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .image-sub {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(10, minmax(0, 1fr))
     }
 }
 
 .results {
     margin-bottom: 2rem;
+    margin-top: 2rem;
     padding: 0 1rem;
 }
 
@@ -180,7 +181,8 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .results {
-        margin-bottom: 3.5rem;
+        margin-top: -25rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -244,7 +246,7 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .result-img {
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -315,8 +317,8 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .result-title {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -379,7 +381,7 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .result-link {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -439,6 +441,6 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .pagination {
-        margin-left: 5.5rem;
+        margin-left: -5.5rem;
     }
 }
