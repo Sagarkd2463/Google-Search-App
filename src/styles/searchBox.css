@@ -10,12 +10,12 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.search-term {
+.search-term input {
     width: 100%;
     border: none;
 }
 
-.search-term:focus {
+.search-term input:focus {
     outline: none;
 }
 
@@ -39,6 +39,7 @@
     font-size: 2.25rem;
     line-height: 2.5rem;
     color: #3B82F6;
+    cursor: pointer;
 }
 
 .search-icon {
@@ -137,8 +138,8 @@
 /* 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
     .searchbox {
-        padding: 0.75rem 2rem;
-        margin: 0 2rem;
+        padding: 0rem 18rem;
+        margin: 0 0.08rem;
     }
 
     .cross-icon {
@@ -157,8 +158,8 @@
 /* 1440px */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .searchbox {
-        padding: 1rem 2.25rem;
-        margin: 0 2.25rem;
+        padding: 0rem 18rem;
+        margin: 0 0.08rem;
     }
 
     .cross-icon {
@@ -177,8 +178,8 @@
 /* 2560px */
 @media (min-width: 1440px) and (max-width: 2559px) {
     .searchbox {
-        padding: 1.25rem 2.5rem;
-        margin: 0 2.5rem;
+        padding: 0rem 32rem;
+        margin: 0 0.08rem;
     }
 
     .cross-icon {
