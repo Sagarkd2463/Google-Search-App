@@ -29,11 +29,11 @@ export default function SearchBox() {
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
-      <RxCross2 className='cross-icon'
+      <RxCross2 className='cross-icon-searchbox'
         onClick={() => setTerm('')}
       />
-      <BsFillMicFill className='voice-icon' />
-      <AiOutlineSearch className='search-icon'
+      <BsFillMicFill className='voice-icon-searchbox' />
+      <AiOutlineSearch className='search-icon-searchbox'
         onClick={handleSubmit}
       />
     </form>

@@ -54,6 +54,7 @@
 @media (min-width: 2560px) {
     .search-header {
         padding: 1.5rem;
+        margin: 3.125rem 3.125rem 3.125rem 3.125rem;
     }
 }
 
@@ -241,6 +242,8 @@
 @media (min-width: 2560px) {
     .searchBox {
         padding: 0.1rem;
+        margin-left: 8rem;
+        margin-right: -20rem;
     }
 }
 
@@ -355,7 +358,8 @@
 
 @media (min-width: 2560px) {
     .settings {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
+        margin-right: 1rem;
     }
 }
 
@@ -419,8 +423,9 @@
 
 @media (min-width: 2560px) {
     .dots {
-        width: 40px;
-        height: 40px;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.6rem;
     }
 }
 
@@ -485,7 +490,8 @@
 
 @media (min-width: 2560px) {
     .sign-in-btn {
-        padding: 0.5rem 1.25rem;
+        padding: 0.5rem 2rem;
         font-size: 1.25rem;
+        margin-left: 1rem;
     }
 }

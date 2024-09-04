@@ -55,7 +55,8 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .image-main {
-        padding-bottom: 0rem;
+        padding-bottom: 2rem;
+        padding-top: 30rem;
     }
 }
 
@@ -119,7 +120,7 @@
 /* 2560px and above */
 @media (min-width: 2560px) {
     .image-sub {
-        grid-template-columns: repeat(6, minmax(0, 1fr))
+        grid-template-columns: repeat(10, minmax(0, 1fr));
     }
 }
 
@@ -185,6 +186,9 @@
     .results {
         margin-top: -25rem;
         margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
