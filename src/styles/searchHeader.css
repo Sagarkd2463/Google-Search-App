@@ -35,19 +35,22 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .search-header {
-        padding: 0.5rem;
+        padding: 1.5rem;
+        margin: 3.125rem 3.125rem 3.125rem 3.125rem;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .search-header {
-        padding: 2rem;
+        padding: 1.5rem;
+        margin: 9.125rem 8.125rem 9.125rem 2.125rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .search-header {
-        padding: 2.5rem;
+        padding: 1.3rem;
+        margin: 6.125rem 7.125rem 6.125rem 2.125rem;
     }
 }
 
@@ -100,9 +103,9 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .search-sub {
-        padding: 0.25rem;
+        padding: 0.3rem;
         margin-bottom: 10px;
-        margin-top: 40px;
+        margin-top: 140px
     }
 }
 
@@ -110,7 +113,7 @@
     .search-sub {
         padding: 0.4rem;
         margin-bottom: 10px;
-        margin-top: 50px;
+        margin-top: 120px;
     }
 }
 
@@ -159,8 +162,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .img-google {
         max-width: 100%;
-        transform: translateX(410px);
-        margin-top: -60px;
+        transform: translateX(500px);
+        margin-top: -70px;
         margin-bottom: 2.3rem;
     }
 }
@@ -168,8 +171,8 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .img-google {
         max-width: 100%;
-        transform: translateX(410px);
-        margin-top: -60px;
+        transform: translateX(700px);
+        margin-top: -90px;
         margin-bottom: 2.3rem;
     }
 }
@@ -177,8 +180,8 @@
 @media (min-width: 1440px) and (max-width: 2559px) {
     .img-google {
         max-width: 100%;
-        transform: translateX(550px);
-        margin-top: -80px;
+        transform: translateX(900px);
+        margin-top: -100px;
         margin-bottom: 2.3rem;
     }
 }
@@ -187,7 +190,7 @@
     .img-google {
         max-width: 100%;
         transform: translateX(1200px);
-        margin-top: -90px;
+        margin-top: -110px;
         margin-bottom: 3.5rem;
     }
 }
@@ -223,19 +226,25 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .searchBox {
-        padding: 0.06rem;
+        padding: 0.1rem;
+        margin-left: 8rem;
+        margin-right: -20rem;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .searchBox {
-        padding: 0.06rem;
+        padding: 0.1rem;
+        margin-left: 4rem;
+        margin-right: -20rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .searchBox {
         padding: 0.1rem;
+        margin-left: 6rem;
+        margin-right: -20rem;
     }
 }
 
@@ -286,22 +295,28 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .search-items {
-        display: inline-flex;
-        margin-left: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .search-items {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 @media (min-width: 2560px) {
     .search-items {
-        display: inline-flex;
-        margin-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 
@@ -340,19 +355,22 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .settings {
-        font-size: 1.85rem;
+        font-size: 3.25rem;
+        margin-right: 1rem;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .settings {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
+        margin-right: 1rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .settings {
-        font-size: 2.25rem;
+        font-size: 3rem;
+        margin-right: 1rem;
     }
 }
 
@@ -402,22 +420,25 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .dots {
-        width: 25px;
-        height: 25px;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.6rem;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .dots {
-        width: 30px;
-        height: 30px;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.6rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .dots {
-        width: 35px;
-        height: 35px;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.6rem;
     }
 }
 
@@ -471,6 +492,7 @@
     .sign-in-btn {
         padding: 0.4rem 1rem;
         font-size: 0.925rem;
+        margin-left: 1rem;
     }
 }
 
@@ -478,20 +500,22 @@
     .sign-in-btn {
         padding: 0.4rem 1rem;
         font-size: 1rem;
+        margin-left: 1rem;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     .sign-in-btn {
-        padding: 0.5rem 1.25rem;
-        font-size: 1.125rem;
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+        margin-left: 0.5rem;
     }
 }
 
 @media (min-width: 2560px) {
     .sign-in-btn {
         padding: 0.5rem 2rem;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         margin-left: 1rem;
     }
 }

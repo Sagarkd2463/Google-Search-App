@@ -138,60 +138,128 @@
 /* 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
     .searchbox {
-        padding: 0rem 18rem;
-        margin: 0 0.08rem;
+        padding: 1rem 40rem 1rem 40rem;
+        margin: 0 21rem 0 21rem;
     }
 
-    .cross-icon {
-        font-size: 1.5rem;
+    .search-term {
+        margin-left: -37.5rem;
+        margin-right: 0.625rem;
+        margin-bottom: -0.313rem;
+        margin-top: 0.25rem;
+        padding-right: 55.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: none;
     }
 
-    .voice-icon {
-        font-size: 2.25rem;
+    .search-term:focus {
+        font-size: 1.35rem;
+        outline: none;
     }
 
-    .search-icon {
-        font-size: 1.75rem;
+    .cross-icon-searchbox {
+        font-size: 3rem;
+        margin-left: -39rem;
+        margin-right: 1rem;
+    }
+
+    .voice-icon-searchbox {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .search-icon-searchbox {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 /* 1440px */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .searchbox {
-        padding: 0rem 18rem;
-        margin: 0 0.08rem;
+        padding: 1rem 27rem 1rem 27rem;
+        margin: 0 10rem 0 10rem;
     }
 
-    .cross-icon {
-        font-size: 1.6rem;
+    .search-term {
+        margin-left: -24.5rem;
+        margin-right: 0.625rem;
+        margin-bottom: -0.313rem;
+        margin-top: 0.25rem;
+        padding-right: 37.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.15rem;
+        border: none;
     }
 
-    .voice-icon {
+    .search-term:focus {
+        font-size: 1.25rem;
+        outline: none;
+    }
+
+    .cross-icon-searchbox {
+        font-size: 3rem;
+        margin-left: -39rem;
+        margin-right: 1rem;
+    }
+
+    .voice-icon-searchbox {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .search-icon-searchbox {
         font-size: 2.5rem;
-    }
-
-    .search-icon {
-        font-size: 1.75rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 /* 2560px */
 @media (min-width: 1440px) and (max-width: 2559px) {
     .searchbox {
-        padding: 0rem 32rem;
-        margin: 0 0.08rem;
+        padding: 1rem 35rem 1rem 35rem;
+        margin: 0 20rem 0 8rem;
     }
 
-    .cross-icon {
-        font-size: 1.75rem;
+    .search-term {
+        margin-left: -32.5rem;
+        margin-right: 0.625rem;
+        margin-bottom: -0.313rem;
+        margin-top: 0.25rem;
+        padding-right: 44.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.25rem;
+        border: none;
     }
 
-    .voice-icon {
+    .search-term:focus {
+        font-size: 1.3rem;
+        outline: none;
+    }
+
+    .cross-icon-searchbox {
+        font-size: 3rem;
+        margin-left: -39rem;
+        margin-right: 1rem;
+    }
+
+    .voice-icon-searchbox {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .search-icon-searchbox {
         font-size: 2.5rem;
-    }
-
-    .search-icon {
-        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -206,9 +274,10 @@
         margin-right: 0.625rem;
         margin-bottom: -0.313rem;
         margin-top: 0.25rem;
-        padding-right: 55.75rem;
+        padding-right: 48.75rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        font-size: 1.4rem;
         border: none;
     }
 

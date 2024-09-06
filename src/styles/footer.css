@@ -240,8 +240,11 @@
 /* Large devices (1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .footer {
-        font-size: 1rem;
-        padding: 0.5rem 1.5rem;
+        position: fixed;
+        font-size: 1.1rem;
+        padding: 1.25rem 3.25rem;
+        margin-left: -16rem;
+        margin-right: -16rem;
     }
 
     .main {
@@ -259,8 +262,11 @@
 
 @media (min-width: 1024px) {
     .footer {
-        font-size: 1rem;
-        padding: 0.5rem 1.5rem;
+        position: fixed;
+        font-size: 1.1rem;
+        padding: 8.25rem 8.25rem;
+        margin-left: 12rem;
+        margin-right: -16rem;
     }
 
     .main {
@@ -279,8 +285,11 @@
 /* Extra large devices (1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .footer {
+        position: fixed;
         font-size: 1.1rem;
-        padding: 0.25rem 3.25rem;
+        padding: 1.25rem 2.25rem;
+        margin-left: 0rem;
+        margin-right: -32rem;
     }
 
     .main {
@@ -300,8 +309,11 @@
 
 @media (min-width: 1440px) {
     .footer {
+        position: fixed;
         font-size: 1.1rem;
-        padding: 1.25rem 3.25rem;
+        padding: 1.25rem 2.25rem;
+        margin-left: 2rem;
+        margin-right: -15rem;
     }
 
     .main {
@@ -322,8 +334,11 @@
 /* Extra extra large devices (2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
     .footer {
-        font-size: 1rem;
-        padding: 1.25rem 2rem;
+        position: fixed;
+        font-size: 1.1rem;
+        padding: 1.25rem 3.25rem;
+        margin-left: -16rem;
+        margin-right: -16rem;
     }
 
     .main {
@@ -343,8 +358,11 @@
 
 @media (min-width: 2560px) {
     .footer {
-        font-size: 1.2rem;
-        padding: 1.5rem 4rem;
+        position: fixed;
+        font-size: 1.1rem;
+        padding: 1.25rem 3.25rem;
+        margin-left: -16rem;
+        margin-right: -16rem;
     }
 
     .main {
