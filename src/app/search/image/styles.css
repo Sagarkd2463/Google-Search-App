@@ -1,3 +1,4 @@
+/* Base Styles */
 .no-result {
     display: flex;
     padding-top: 2.5rem;
@@ -28,62 +29,378 @@
     margin-right: 0.5rem;
     flex-direction: column;
     max-width: 72rem;
-
-    @media (min-width: 640px) {
-        margin-left: 1rem;
-        flex-direction: row;
-    }
-
-    @media (min-width: 1024px) {
-        padding-left: 13rem;
-    }
 }
 
 .sub-loader {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: .5;
-    }
+.sub-loader-one,
+.sub-loader-two,
+.sub-loader-three {
+    border-radius: 0.375rem;
+    background-color: #E5E7EB;
 }
 
 .sub-loader-one {
     margin-bottom: 1rem;
-    border-radius: 0.375rem;
     width: 12rem;
     height: 12rem;
-    background-color: #E5E7EB;
 }
 
-.sub-loader-two {
-    margin-bottom: 0.625rem;
-    border-radius: 0.375rem;
-    width: 12rem;
-    height: 0.5rem;
-    background-color: #E5E7EB;
-}
-
+.sub-loader-two,
 .sub-loader-three {
     margin-bottom: 0.625rem;
-    border-radius: 0.375rem;
     width: 12rem;
     height: 0.5rem;
-    background-color: #E5E7EB;
 }
 
 .loader-two {
     display: none;
+}
 
-    @media (min-width: 640px) {
+/* Width-Based Media Queries */
+
+/* Extra Small Devices (up to 320px) */
+@media (max-width: 320px) {
+    .no-result-title {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .searching {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .loader-one {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .loader-two {
+        display: none;
+    }
+}
+
+/* Small Devices (321px - 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .no-result-title {
+        font-size: 1.6rem;
+        line-height: 1.85rem;
+    }
+
+    .searching {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .loader-one {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .loader-two {
+        display: none;
+    }
+}
+
+/* Medium Devices (376px - 425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+    .no-result-title {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .searching {
+        font-size: 1.2rem;
+        line-height: 1.65rem;
+    }
+
+    .loader-one {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .loader-two {
+        display: none;
+    }
+}
+
+/* Large Devices (426px - 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .no-result-title {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+
+    .searching {
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+    }
+
+    .loader-one {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .sub-loader-one {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 14rem;
+        height: 0.75rem;
+    }
+
+    .loader-two {
+        display: none;
+    }
+}
+
+/* Extra Large Devices (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .no-result-title {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .searching {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .loader-one {
+        padding-left: 13rem;
+    }
+
+    .sub-loader-one {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 16rem;
+        height: 1rem;
+    }
+
+    .loader-two {
+        display: none;
+    }
+}
+
+/* Large Desktops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .no-result-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .searching {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+
+    .loader-two {
         display: inline-flex;
         margin-left: 1rem;
+    }
+}
+
+/* Extra Extra Large Devices (1441px - 2560px) */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .no-result-title {
+        font-size: 2.2rem;
+        line-height: 2.75rem;
+    }
+
+    .searching {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .sub-loader-one {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 18rem;
+        height: 1.25rem;
+    }
+}
+
+/* Ultra Large Devices (2560px and above) */
+@media (min-width: 2560px) {
+    .no-result-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .searching {
+        font-size: 1.75rem;
+        line-height: 2.2rem;
+    }
+
+    .sub-loader-one {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 20rem;
+        height: 1.5rem;
+    }
+}
+
+/* Height-Based Media Queries */
+
+/* Short Viewports (up to 400px height) */
+@media (max-height: 400px) {
+    .no-result {
+        padding-top: 1rem;
+    }
+
+    .no-result-title {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .searching {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .loader-one {
+        padding-top: 1rem;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+/* Medium Short Viewports (401px - 600px height) */
+@media (min-height: 401px) and (max-height: 600px) {
+    .no-result {
+        padding-top: 2rem;
+    }
+
+    .no-result-title {
+        font-size: 1.6rem;
+        line-height: 1.85rem;
+    }
+
+    .searching {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .loader-one {
+        padding-top: 2rem;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+
+/* Medium Tall Viewports (601px - 800px height) */
+@media (min-height: 601px) and (max-height: 800px) {
+    .no-result {
+        padding-top: 2.5rem;
+    }
+
+    .no-result-title {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .searching {
+        font-size: 1.2rem;
+        line-height: 1.65rem;
+    }
+
+    .loader-one {
+        padding-top: 2.5rem;
+    }
+
+    .sub-loader-one,
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+/* Tall Viewports (801px and above) */
+@media (min-height: 801px) {
+    .no-result {
+        padding-top: 3rem;
+    }
+
+    .no-result-title {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .searching {
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+    }
+
+    .loader-one {
+        padding-top: 3rem;
+    }
+
+    .sub-loader-one {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .sub-loader-two,
+    .sub-loader-three {
+        width: 14rem;
+        height: 0.75rem;
     }
 }

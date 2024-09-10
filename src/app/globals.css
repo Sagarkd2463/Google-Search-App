@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,209 +15,9 @@
     padding: 20px;
 }
 
-/* Small devices (320px) */
-@media (max-width: 320px) {
-    .main-page {
-        padding: 7px;
-        justify-content: center;
-    }
-}
-
-/* Small devices (375px) */
-@media (min-width: 321px) and (max-width: 375px) {
-    .main-page {
-        padding: 10px;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 375px) {
-    .main-page {
-        padding: 10px;
-        justify-content: center;
-    }
-}
-
-/* Small devices (425px) */
-@media (min-width: 376px) and (max-width: 425px) {
-    .main-page {
-        padding: 12px;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 425px) {
-    .main-page {
-        padding: 12px;
-        justify-content: center;
-    }
-}
-
-/* Medium devices (tablets, 768px) */
-@media (min-width: 426px) and (max-width: 768px) {
-    .main-page {
-        padding: 15px;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 768px) {
-    .main-page {
-        padding: 15px;
-        justify-content: center;
-    }
-}
-
-/* Medium devices (1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .main-page {
-        padding: 20px;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 1024px) {
-    .main-page {
-        padding: 20px;
-        justify-content: center;
-    }
-}
-
-/* Large devices (1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .main-page {
-        padding: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1440px) {
-    .main-page {
-        padding: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Extra Extra Large devices (2560px) */
-@media (min-width: 1441px) and (max-width: 2560px) {
-    .main-page {
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 2560px) {
-    .main-page {
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .logo-img {
     margin-bottom: 2.5rem;
     margin-top: 5.38rem;
-}
-
-/* Small devices (320px) */
-@media (max-width: 320px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -7rem;
-    }
-}
-
-/* Small devices (375px) */
-@media (min-width: 321px) and (max-width: 375px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-}
-
-@media (min-width: 375px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-}
-
-/* Small devices (425px) */
-@media (min-width: 376px) and (max-width: 425px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-}
-
-@media (min-width: 425px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-}
-
-/* Medium devices (tablets, 768px) */
-@media (min-width: 426px) and (max-width: 768px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -5rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -5rem;
-    }
-}
-
-/* Medium devices (1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -7rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -7rem;
-    }
-}
-
-/* Large devices (1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .logo-img {
-        margin-bottom: 0rem;
-        margin-top: -5rem;
-    }
-}
-
-@media (min-width: 1440px) {
-    .logo-img {
-        margin-bottom: 0rem;
-        margin-top: -5rem;
-    }
-}
-
-/* Extra Extra Large devices (2560px) */
-@media (min-width: 1441px) and (max-width: 2560px) {
-    .logo-img {
-        margin-bottom: 0rem;
-        margin-top: -7rem;
-    }
-}
-
-@media (min-width: 2560px) {
-    .logo-img {
-        margin-bottom: -1rem;
-        margin-top: -7rem;
-    }
 }
 
 .error {
@@ -235,4 +36,223 @@
 
 .error-btn {
     color: #3B82F6;
+}
+
+/* Width-Based Media Queries */
+
+/* Extra Small Devices (up to 320px) */
+@media (max-width: 320px) {
+    .main-page {
+        padding: 7px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -7rem;
+    }
+
+    .message {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* Small Devices (321px - 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .main-page {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+
+    .message {
+        font-size: 1.6rem;
+        line-height: 1.85rem;
+    }
+}
+
+/* Medium Devices (376px - 425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+    .main-page {
+        padding: 12px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+
+    .message {
+        font-size: 1.7rem;
+        line-height: 1.95rem;
+    }
+}
+
+/* Large Devices (426px - 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .main-page {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -5rem;
+    }
+
+    .message {
+        font-size: 1.8rem;
+        line-height: 2.05rem;
+    }
+}
+
+/* Extra Large Devices (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-page {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -7rem;
+    }
+
+    .message {
+        font-size: 1.9rem;
+        line-height: 2.15rem;
+    }
+}
+
+/* Large Desktops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main-page {
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0rem;
+        margin-top: -5rem;
+    }
+
+    .message {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+}
+
+/* Extra Extra Large Devices (1441px - 2560px) */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .main-page {
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        margin-bottom: 0rem;
+        margin-top: -7rem;
+    }
+
+    .message {
+        font-size: 2.1rem;
+        line-height: 2.35rem;
+    }
+}
+
+/* Ultra Large Devices (2560px and above) */
+@media (min-width: 2560px) {
+    .main-page {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        margin-bottom: -1rem;
+        margin-top: -7rem;
+    }
+
+    .message {
+        font-size: 2.2rem;
+        line-height: 2.45rem;
+    }
+}
+
+/* Height-Based Media Queries */
+
+/* Extra Small Height (up to 600px) */
+@media (max-height: 600px) {
+    .main-page {
+        padding: 10px;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+
+    .message {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* Small Height (601px - 800px) */
+@media (min-height: 601px) and (max-height: 800px) {
+    .main-page {
+        padding: 12px;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -6rem;
+    }
+
+    .message {
+        font-size: 1.6rem;
+        line-height: 1.85rem;
+    }
+}
+
+/* Medium Height (801px - 1000px) */
+@media (min-height: 801px) and (max-height: 1000px) {
+    .main-page {
+        padding: 15px;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -5rem;
+    }
+
+    .message {
+        font-size: 1.7rem;
+        line-height: 1.95rem;
+    }
+}
+
+/* Large Height (1001px and above) */
+@media (min-height: 1001px) {
+    .main-page {
+        padding: 20px;
+    }
+
+    .logo-img {
+        margin-bottom: 0.5rem;
+        margin-top: -7rem;
+    }
+
+    .message {
+        font-size: 1.9rem;
+        line-height: 2.05rem;
+    }
 }

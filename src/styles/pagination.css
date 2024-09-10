@@ -1,3 +1,4 @@
+/* Base styles */
 a {
     text-decoration: none;
 }
@@ -9,70 +10,6 @@ a {
     color: #1D4ED8;
 }
 
-@media (max-width: 320px) {
-    .page-main {
-        padding: 0 1rem 1rem 1rem;
-    }
-}
-
-@media (min-width: 321px) and (max-width: 374px) {
-    .page-main {
-        padding: 0 1.25rem 1rem 1.25rem;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-    .page-main {
-        padding: 0 1.5rem 1rem 1.5rem;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 639px) {
-    .page-main {
-        padding: 0 2rem 1rem 2rem;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 767px) {
-    .page-main {
-        padding: 0;
-        margin-left: 8rem;
-        justify-content: flex-start;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .page-main {
-        padding: 0;
-        margin-left: 9rem;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1439px) {
-    .page-main {
-        padding: 0;
-        margin: 30rem 0 0 0;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 2559px) {
-    .page-main {
-        padding: 0;
-        margin: 30rem 0 0 0;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 2560px) {
-    .page-main {
-        padding: 0;
-        margin-left: 10rem;
-        justify-content: space-between;
-    }
-}
-
 .page-one,
 .page-two {
     display: flex;
@@ -80,78 +17,9 @@ a {
     align-items: center;
 }
 
-@media (max-width: 320px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (min-width: 321px) and (max-width: 374px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 0.75rem;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 639px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 1.25rem;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 767px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 1.5rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 1.75rem;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1439px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 2rem;
-        margin-top: -15rem;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 2559px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 2.25rem;
-        margin-top: -15rem;
-    }
-}
-
-@media (min-width: 2560px) {
-
-    .page-one,
-    .page-two {
-        margin-bottom: 2.5rem;
-    }
+.previous,
+.next {
+    height: 1.25rem;
 }
 
 .page-one p:hover,
@@ -159,12 +27,18 @@ a {
     text-decoration: underline;
 }
 
-.previous,
-.next {
-    height: 1.25rem;
-}
+/* Common height-based breakpoints */
 
-@media (max-width: 320px) {
+/* Short screens (up to 480px height) */
+@media (max-height: 480px) {
+    .page-main {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 0.5rem;
+    }
 
     .previous,
     .next {
@@ -172,15 +46,16 @@ a {
     }
 }
 
-@media (min-width: 321px) and (max-width: 374px) {
-
-    .previous,
-    .next {
-        height: 1.1rem;
+/* Medium screens (481px - 768px height) */
+@media (min-height: 481px) and (max-height: 768px) {
+    .page-main {
+        padding: 0 1.5rem 1rem 1.5rem;
     }
-}
 
-@media (min-width: 375px) and (max-width: 424px) {
+    .page-one,
+    .page-two {
+        margin-bottom: 1rem;
+    }
 
     .previous,
     .next {
@@ -188,7 +63,86 @@ a {
     }
 }
 
+/* Tall screens (768px and above) */
+@media (min-height: 768px) {
+    .page-main {
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 1.75rem;
+    }
+
+    .previous,
+    .next {
+        height: 1.5rem;
+    }
+}
+
+/* Width-based breakpoints */
+
+/* Extra Small Devices (up to 320px) */
+@media (max-width: 320px) {
+    .page-main {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 0.5rem;
+    }
+
+    .previous,
+    .next {
+        height: 1rem;
+    }
+}
+
+/* Small Devices (321px - 374px) */
+@media (min-width: 321px) and (max-width: 374px) {
+    .page-main {
+        padding: 0 1.25rem 1rem 1.25rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 0.75rem;
+    }
+
+    .previous,
+    .next {
+        height: 1.1rem;
+    }
+}
+
+/* Medium Devices (375px - 424px) */
+@media (min-width: 375px) and (max-width: 424px) {
+    .page-main {
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 1rem;
+    }
+
+    .previous,
+    .next {
+        height: 1.2rem;
+    }
+}
+
+/* Large Devices (425px - 639px) */
 @media (min-width: 425px) and (max-width: 639px) {
+    .page-main {
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 1.25rem;
+    }
 
     .previous,
     .next {
@@ -196,7 +150,18 @@ a {
     }
 }
 
+/* Extra Large Devices (640px - 767px) */
 @media (min-width: 640px) and (max-width: 767px) {
+    .page-main {
+        padding: 0;
+        margin-left: 8rem;
+        justify-content: flex-start;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 1.5rem;
+    }
 
     .previous,
     .next {
@@ -204,7 +169,19 @@ a {
     }
 }
 
+/* Large Desktops (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
+    .page-main {
+        padding: 0;
+        margin-left: 9rem;
+        justify-content: space-between;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 1.75rem;
+        margin-top: -15rem;
+    }
 
     .previous,
     .next {
@@ -212,7 +189,19 @@ a {
     }
 }
 
+/* Extra Large Desktops (1024px - 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
+    .page-main {
+        padding: 0;
+        margin: 30rem 0 0 0;
+        justify-content: space-between;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 2rem;
+        margin-top: -15rem;
+    }
 
     .previous,
     .next {
@@ -220,7 +209,19 @@ a {
     }
 }
 
+/* Ultra Large Desktops (1440px and above) */
 @media (min-width: 1440px) and (max-width: 2559px) {
+    .page-main {
+        padding: 0;
+        margin: 30rem 0 0 0;
+        justify-content: space-between;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 2.25rem;
+        margin-top: -15rem;
+    }
 
     .previous,
     .next {
@@ -228,7 +229,18 @@ a {
     }
 }
 
+/* Ultra Large Desktops (2560px and above) */
 @media (min-width: 2560px) {
+    .page-main {
+        padding: 0;
+        margin-left: 10rem;
+        justify-content: space-between;
+    }
+
+    .page-one,
+    .page-two {
+        margin-bottom: 2.5rem;
+    }
 
     .previous,
     .next {
