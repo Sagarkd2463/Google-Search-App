@@ -6,7 +6,7 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 0.87rem;
@@ -28,6 +28,14 @@
 }
 
 /* Width Breakpoints */
+@media only screen and (min-width: 2560px) {
+    .country {
+        max-width: 3100px;
+        padding: 14px
+    }
+}
+
+
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     .country {
         max-width: 2400px;
@@ -131,11 +139,11 @@
 @media (max-width: 425px) and (max-height: 600px) {
     .footer {
         font-size: 0.55rem;
-        padding: 0.35rem 0.75rem;
+        padding: 0.3rem 0.7rem;
     }
 
     .main {
-        padding: 0.25rem 0.5rem;
+        padding: 0.2rem 0.45rem;
         margin-top: -0.5rem;
     }
 }
@@ -144,11 +152,11 @@
 @media (min-width: 426px) and (max-width: 768px) and (min-height: 601px) and (max-height: 800px) {
     .footer {
         font-size: 0.85rem;
-        padding: 0.5rem 1.25rem;
+        padding: 0.45rem 1.2rem;
     }
 
     .main {
-        padding: 0.5rem 1.25rem;
+        padding: 0.45rem 1.2rem;
         margin-top: -0.5rem;
     }
 }
@@ -157,11 +165,11 @@
 @media (min-width: 769px) and (max-width: 1024px) and (min-height: 801px) and (max-height: 1080px) {
     .footer {
         font-size: 1.1rem;
-        padding: 1rem 2.5rem;
+        padding: 0.95rem 2.45rem;
     }
 
     .main {
-        padding: 1rem 2rem;
+        padding: 0.95rem 1.5rem;
     }
 }
 
@@ -169,11 +177,11 @@
 @media (min-width: 1025px) and (max-width: 1440px) and (min-height: 1081px) {
     .footer {
         font-size: 1.2rem;
-        padding: 1.25rem 3rem;
+        padding: 1.2rem 2.5rem;
     }
 
     .main {
-        padding: 1.5rem 2.5rem;
+        padding: 1.45rem 2.45rem;
     }
 }
 
@@ -198,7 +206,6 @@
 .footer-two a {
     text-decoration: none;
     color: #191c23;
-    /* Default footer link color */
 }
 
 .footer-one a:hover,
@@ -211,12 +218,18 @@
 /* Small devices (width <= 425px) */
 @media (max-width: 425px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
     .footer-two {
-        align-items: center;
-        /* Center items on small screens */
-        margin-left: 0;
-        /* Remove any left margin */
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 
     .footer-one li,
@@ -228,31 +241,42 @@
 /* Medium devices (426px - 768px) */
 @media (min-width: 426px) and (max-width: 768px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        /* Change to row layout for more horizontal space */
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 
     .footer-one li,
     .footer-two li {
         margin-bottom: 0;
-        /* No vertical margin for row layout */
         margin-right: 1rem;
-        /* Add right margin for spacing */
     }
 }
 
 /* Large tablets and laptops (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 
     .footer-one li,
@@ -265,12 +289,18 @@
 /* Desktops (1025px - 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 2rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 
     .footer-one li,
@@ -283,12 +313,18 @@
 /* Extra-large desktops (1441px - 2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 4rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 
     .footer-one li,
@@ -303,11 +339,16 @@
 /* Small height devices (height <= 600px) */
 @media (max-height: 600px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: -6rem;
+    }
+
     .footer-two {
         flex-direction: column;
-        /* Use vertical stacking for limited height */
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-evenly;
     }
 
@@ -320,11 +361,17 @@
 /* Medium height devices (height: 601px - 800px) */
 @media (min-height: 601px) and (max-height: 800px) {
 
-    .footer-one,
-    .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: flex-start;
+        margin-bottom: -6rem;
+    }
+
+    .footer-two {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
     }
 
     .footer-one li,
@@ -336,11 +383,17 @@
 /* Large height devices (height: 801px - 1080px) */
 @media (min-height: 801px) and (max-height: 1080px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: -6rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
     }
 
     .footer-one li,
@@ -353,12 +406,17 @@
 /* Extra-large height devices (height > 1080px) */
 @media (min-height: 1081px) {
 
-    .footer-one,
+    .footer-one {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-bottom: -6rem;
+    }
+
     .footer-two {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 2rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
     }
 
     .footer-one li,
