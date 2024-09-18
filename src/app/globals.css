@@ -1,4 +1,3 @@
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -38,9 +37,32 @@
     color: #3B82F6;
 }
 
-/* Width-Based Media Queries */
+@media only screen and (max-width: 768px) {
 
-/* Extra Small Devices (up to 320px) */
+    /* Custom styles for mobile devices */
+    .main-page {
+        padding: 15px;
+    }
+
+    .logo-img {
+        width: 80%;
+        /* Adjust image size */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* Custom styles for desktop devices */
+    .main-page {
+        padding: 30px;
+    }
+
+    .logo-img {
+        width: 60%;
+        /* Adjust image size */
+    }
+}
+
 @media (max-width: 320px) {
     .main-page {
         padding: 7px;
@@ -58,7 +80,6 @@
     }
 }
 
-/* Small Devices (321px - 375px) */
 @media (min-width: 321px) and (max-width: 375px) {
     .main-page {
         padding: 10px;
@@ -76,7 +97,6 @@
     }
 }
 
-/* Medium Devices (376px - 425px) */
 @media (min-width: 376px) and (max-width: 425px) {
     .main-page {
         padding: 12px;
@@ -94,7 +114,6 @@
     }
 }
 
-/* Large Devices (426px - 768px) */
 @media (min-width: 426px) and (max-width: 768px) {
     .main-page {
         padding: 15px;
@@ -112,7 +131,6 @@
     }
 }
 
-/* Extra Large Devices (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .main-page {
         padding: 20px;
@@ -130,7 +148,6 @@
     }
 }
 
-/* Large Desktops (1025px - 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .main-page {
         padding: 30px;
@@ -149,7 +166,6 @@
     }
 }
 
-/* Extra Extra Large Devices (1441px - 2560px) */
 @media (min-width: 1441px) and (max-width: 2560px) {
     .main-page {
         padding: 40px;
@@ -168,7 +184,6 @@
     }
 }
 
-/* Ultra Large Devices (2560px and above) */
 @media (min-width: 2560px) {
     .main-page {
         padding: 20px;
@@ -184,75 +199,5 @@
     .message {
         font-size: 2.2rem;
         line-height: 2.45rem;
-    }
-}
-
-/* Height-Based Media Queries */
-
-/* Extra Small Height (up to 600px) */
-@media (max-height: 600px) {
-    .main-page {
-        padding: 10px;
-    }
-
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-
-    .message {
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-    }
-}
-
-/* Small Height (601px - 800px) */
-@media (min-height: 601px) and (max-height: 800px) {
-    .main-page {
-        padding: 12px;
-    }
-
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
-    }
-
-    .message {
-        font-size: 1.6rem;
-        line-height: 1.85rem;
-    }
-}
-
-/* Medium Height (801px - 1000px) */
-@media (min-height: 801px) and (max-height: 1000px) {
-    .main-page {
-        padding: 15px;
-    }
-
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -5rem;
-    }
-
-    .message {
-        font-size: 1.7rem;
-        line-height: 1.95rem;
-    }
-}
-
-/* Large Height (1001px and above) */
-@media (min-height: 1001px) {
-    .main-page {
-        padding: 20px;
-    }
-
-    .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -7rem;
-    }
-
-    .message {
-        font-size: 1.9rem;
-        line-height: 2.05rem;
     }
 }

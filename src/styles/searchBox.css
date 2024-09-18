@@ -1,4 +1,10 @@
-/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .searchbox {
     display: flex;
     padding: 0rem 60rem;
@@ -50,78 +56,6 @@
     color: #3B82F6;
     cursor: pointer;
 }
-
-/* Common height-based breakpoints */
-
-/* Short screens (up to 480px height) */
-@media (max-height: 480px) {
-    .searchbox {
-        padding: 0rem 4rem;
-        margin: 4px 1rem;
-    }
-
-    .cross-icon {
-        font-size: 1.25rem;
-    }
-
-    .voice-icon {
-        font-size: 1.75rem;
-        margin-right: 0.5rem;
-    }
-
-    .search-icon {
-        font-size: 1.25rem;
-    }
-}
-
-/* Medium screens (481px - 768px height) */
-@media (min-height: 481px) and (max-height: 768px) {
-    .searchbox {
-        padding: 0.6rem 1.25rem;
-        margin: 0 1rem;
-    }
-
-    .cross-icon {
-        font-size: 1.35rem;
-    }
-
-    .voice-icon {
-        font-size: 1.75rem;
-        margin-right: 0.5rem;
-    }
-
-    .search-icon {
-        font-size: 1.25rem;
-    }
-}
-
-/* Tall screens (768px and above) */
-@media (min-height: 768px) {
-    .searchbox {
-        padding-left: 38rem;
-        padding-right: 10.5rem;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        margin-left: 20rem;
-        margin-right: -4rem;
-    }
-
-    .cross-icon {
-        font-size: 1.45rem;
-    }
-
-    .voice-icon {
-        display: inline-flex;
-        font-size: 2rem;
-    }
-
-    .search-icon {
-        display: inline-flex;
-        font-size: 1.5rem;
-    }
-}
-
-/* Width-based breakpoints */
 
 /* Extra Small Devices (up to 320px) */
 @media (max-width: 320px) {
@@ -230,53 +164,34 @@
     }
 }
 
-/* Large Desktops (768px - 1023px) */
+/* Large Tablets and Small Desktops (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .searchbox {
         padding-left: 38rem;
         padding-right: 10.5rem;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
         margin-left: 20rem;
         margin-right: -4rem;
     }
 
     .search-term {
         margin-left: -37.5rem;
-        margin-right: 0.625rem;
-        margin-bottom: -0.313rem;
-        margin-top: 0.25rem;
         padding-right: 33rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        border: none;
     }
 
-    .search-term:focus {
-        font-size: 1.35rem;
-        outline: none;
-    }
-
-    .cross-icon-searchbox {
+    .cross-icon {
         font-size: 3rem;
-        margin-left: -39rem;
-        margin-right: 1rem;
     }
 
-    .voice-icon-searchbox {
+    .voice-icon {
         font-size: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
-    .search-icon-searchbox {
+    .search-icon {
         font-size: 2.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }
 
-/* Extra Large Desktops (1024px - 1439px) */
+/* Large Desktops (1024px - 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .searchbox {
         padding: 1rem 27rem;
@@ -285,41 +200,23 @@
 
     .search-term {
         margin-left: -24.5rem;
-        margin-right: 0.625rem;
-        margin-bottom: -0.313rem;
-        margin-top: 0.25rem;
         padding-right: 37.75rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        font-size: 1.15rem;
-        border: none;
     }
 
-    .search-term:focus {
-        font-size: 1.25rem;
-        outline: none;
-    }
-
-    .cross-icon-searchbox {
+    .cross-icon {
         font-size: 3rem;
-        margin-left: -39rem;
-        margin-right: 1rem;
     }
 
-    .voice-icon-searchbox {
+    .voice-icon {
         font-size: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
-    .search-icon-searchbox {
+    .search-icon {
         font-size: 2.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }
 
-/* Ultra Large Desktops (1440px and above) */
+/* Wide Desktops (1440px - 2559px) */
 @media (min-width: 1440px) and (max-width: 2559px) {
     .searchbox {
         padding: 1rem 35rem;
@@ -328,41 +225,23 @@
 
     .search-term {
         margin-left: -32.5rem;
-        margin-right: 0.625rem;
-        margin-bottom: -0.313rem;
-        margin-top: 0.25rem;
         padding-right: 44.75rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        font-size: 1.25rem;
-        border: none;
     }
 
-    .search-term:focus {
-        font-size: 1.3rem;
-        outline: none;
-    }
-
-    .cross-icon-searchbox {
+    .cross-icon {
         font-size: 3rem;
-        margin-left: -39rem;
-        margin-right: 1rem;
     }
 
-    .voice-icon-searchbox {
+    .voice-icon {
         font-size: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
-    .search-icon-searchbox {
+    .search-icon {
         font-size: 2.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }
 
-/* Ultra Large Desktops (2560px and above) */
+/* Ultra Wide Desktops (2560px and above) */
 @media (min-width: 2560px) {
     .searchbox {
         padding: 1rem 40rem;
@@ -371,36 +250,18 @@
 
     .search-term {
         margin-left: -37.5rem;
-        margin-right: 0.625rem;
-        margin-bottom: -0.313rem;
-        margin-top: 0.25rem;
         padding-right: 48.75rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        font-size: 1.4rem;
-        border: none;
     }
 
-    .search-term:focus {
-        font-size: 1.35rem;
-        outline: none;
-    }
-
-    .cross-icon-searchbox {
+    .cross-icon {
         font-size: 3rem;
-        margin-left: -39rem;
-        margin-right: 1rem;
     }
 
-    .voice-icon-searchbox {
+    .voice-icon {
         font-size: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
-    .search-icon-searchbox {
+    .search-icon {
         font-size: 2.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }
