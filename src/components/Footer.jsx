@@ -24,6 +24,20 @@ export default function Footer() {
           <li className='list'>News</li>
         </ul>
       </div>
+
+      <div className="social-icons">
+        <div className='instagram-icon'>
+          <i className="ri-instagram-line"></i>
+        </div>
+
+        <div className="facebook-icon">
+          <i className="ri-facebook-circle-line"></i>
+        </div>
+
+        <div className="twiiter-icon">
+          <i className="ri-twitter-x-line"></i>
+        </div>
+      </div>
     </footer>
   );
 };

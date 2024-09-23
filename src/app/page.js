@@ -14,7 +14,7 @@ export default function Home() {
         height={100}
         priority="true"
         className="logo-img"
-        style={{ width: 'auto' }}
+        style={{ width: 'auto', marginTop: 110, marginLeft: 18 }}
       />
       <HomeSearch />
     </>
