@@ -1,6 +1,8 @@
 import React from 'react';
 import CountryLookup from './CountryLookup';
 import '../styles/footer.css';
+import { FaFacebook, FaInstagram, } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
@@ -27,15 +29,15 @@ export default function Footer() {
 
       <div className="social-icons">
         <div className='instagram-icon'>
-          <i className="ri-instagram-line"></i>
+          <FaInstagram />
         </div>
 
         <div className="facebook-icon">
-          <i className="ri-facebook-circle-line"></i>
+          <FaFacebook />
         </div>
 
         <div className="twiiter-icon">
-          <i className="ri-twitter-x-line"></i>
+          <FaXTwitter />
         </div>
       </div>
     </footer>

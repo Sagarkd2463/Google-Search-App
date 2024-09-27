@@ -36,37 +36,69 @@
     outline: none;
 }
 
-.text-input::placeholder {
+.text-input input {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.1rem;
+}
+
+.text-input::placeholder {
+    font-size: 10px;
+}
+
+.search-sub {
+    margin-top: -0.9rem;
+    margin-bottom: -0.5rem;
 }
 
 @media (max-width: 320px) {
     .form-main {
         max-width: 100%;
-        padding: 0.55rem 0.8rem;
-        font-size: 0.9rem;
+        padding: 0.2rem 1rem;
     }
 
-    .search-icon,
+    .search-icon {
+        font-size: 0.5rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
     .voice-icon {
-        font-size: 1rem;
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
     }
 
     .text-input::placeholder {
-        font-size: 0.8rem;
+        font-size: 8px;
     }
 
-    .search-btn,
-    .random-btn {
-        width: 8.25rem;
-        height: 2.35rem;
-        font-size: 0.65rem;
-        border-radius: 0.8rem;
+    .text-input input:focus {
+        outline: none;
+        font-size: 8px;
+    }
+
+    .search-btn {
+        width: 5rem;
+        height: 1.5rem;
+        font-size: 0.4rem;
+        border-radius: 0.95rem;
         border: none;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         background-color: cornflowerblue;
         color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 5rem;
+        height: 1.5rem;
+        font-size: 0.4rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
     }
 }
 

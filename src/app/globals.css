@@ -70,8 +70,10 @@
     }
 
     .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -7rem;
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 40%;
+        height: 40%;
     }
 
     .message {

@@ -35,7 +35,7 @@ export default function HomeSearch() {
       <form className='form-main'
         onSubmit={handleSubmit}>
         <AiOutlineSearch className='search-icon' />
-        <input type="text" className='text-input' onChange={(e) => setInput(e.target.value)} placeholder='Search Google or Type a URL' />
+        <input type="text" className='text-input' onChange={(e) => setInput(e.target.value)} placeholder='Search Google or Type a url' />
         <BsFillMicFill className='voice-icon' />
       </form>
       <div className='search-sub'>
