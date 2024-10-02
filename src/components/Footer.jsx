@@ -28,6 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="social-icons">
+        <p className="follow">Follow us on</p>
         <div className='instagram-icon'>
           <FaInstagram />
         </div>

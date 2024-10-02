@@ -37,33 +37,7 @@
     color: #3B82F6;
 }
 
-@media only screen and (max-width: 768px) {
-
-    /* Custom styles for mobile devices */
-    .main-page {
-        padding: 15px;
-    }
-
-    .logo-img {
-        width: 80%;
-        /* Adjust image size */
-    }
-}
-
-@media only screen and (min-width: 769px) {
-
-    /* Custom styles for desktop devices */
-    .main-page {
-        padding: 30px;
-    }
-
-    .logo-img {
-        width: 60%;
-        /* Adjust image size */
-    }
-}
-
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     .main-page {
         padding: 7px;
         justify-content: center;
@@ -82,15 +56,17 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 375px) {
+@media only screen and (min-width: 321px) and (max-width: 375px) {
     .main-page {
         padding: 10px;
         justify-content: center;
     }
 
     .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 35%;
+        height: 35%;
     }
 
     .message {
@@ -99,15 +75,36 @@
     }
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
+@media only screen and (min-width: 375px) {
+    .main-page {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 35%;
+        height: 35%;
+    }
+
+    .message {
+        font-size: 1.6rem;
+        line-height: 1.85rem;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
     .main-page {
         padding: 12px;
         justify-content: center;
     }
 
     .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -6rem;
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 30%;
+        height: 30%;
     }
 
     .message {
@@ -116,15 +113,55 @@
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) {
+    .main-page {
+        padding: 12px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 30%;
+        height: 30%;
+    }
+
+    .message {
+        font-size: 1.7rem;
+        line-height: 1.95rem;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     .main-page {
         padding: 15px;
         justify-content: center;
     }
 
     .logo-img {
-        margin-bottom: 0.5rem;
-        margin-top: -5rem;
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 25%;
+        height: 25%;
+    }
+
+    .message {
+        font-size: 1.8rem;
+        line-height: 2.05rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-page {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .logo-img {
+        margin-bottom: -0.5rem;
+        margin-top: -15rem;
+        width: 25%;
+        height: 25%;
     }
 
     .message {
