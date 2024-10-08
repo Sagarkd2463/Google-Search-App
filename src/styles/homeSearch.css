@@ -423,89 +423,320 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .form-main {
-        max-width: 48rem;
-        padding: 1rem 1.5rem;
-        font-size: 1.2rem;
+        max-width: 50rem;
+        padding: 0.45rem 1.4rem;
     }
 
-    .search-icon,
-    .voice-icon {
-        font-size: 1.35rem;
-    }
-
-    .text-input::placeholder {
-        font-size: 1.15rem;
-    }
-
-    .search-btn,
-    .random-btn {
-        width: 9rem;
-        height: 2.75rem;
-        font-size: 0.9rem;
-        border-radius: 0.8rem;
-        border: none;
-        margin-right: 1rem;
-        background-color: cornflowerblue;
-        color: white;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .form-main {
-        max-width: 55rem;
-        padding: 1.05rem 1.55rem;
-        font-size: 1.2rem;
-    }
-
-    .search-icon,
-    .voice-icon {
-        font-size: 1.6rem;
-    }
-
-    .text-input::placeholder {
-        font-size: 1.22rem;
-    }
-
-    .search-btn,
-    .random-btn {
-        width: 9.5rem;
-        height: 3rem;
+    .search-icon {
         font-size: 0.95rem;
-        border-radius: 0.8rem;
-        border: none;
-        margin-right: 1rem;
-        background-color: cornflowerblue;
-        color: white;
-    }
-}
-
-@media (min-width: 1441px) {
-    .form-main {
-        max-width: 60rem;
-        padding: 1.5rem 2rem;
-        font-size: 1.4rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
     }
 
-    .search-icon,
     .voice-icon {
-        font-size: 1.8rem;
+        font-size: 0.95rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
     }
 
     .text-input::placeholder {
-        font-size: 1.3rem;
+        font-size: 10px;
     }
 
-    .search-btn,
-    .random-btn {
-        width: 10rem;
-        height: 3.5rem;
-        font-size: 1.05rem;
-        border-radius: 0.8rem;
+    .text-input input:focus {
+        outline: none;
+        font-size: 10px;
+    }
+
+    .search-btn {
+        width: 6rem;
+        height: 1.95rem;
+        font-size: 0.6rem;
+        border-radius: 0.95rem;
         border: none;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         background-color: cornflowerblue;
         color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6rem;
+        height: 1.95rem;
+        font-size: 0.6rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .form-main {
+        max-width: 50rem;
+        padding: 0.45rem 1.4rem;
+    }
+
+    .search-icon {
+        font-size: 0.95rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .voice-icon {
+        font-size: 0.95rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .text-input::placeholder {
+        font-size: 10px;
+    }
+
+    .text-input input:focus {
+        outline: none;
+        font-size: 10px;
+    }
+
+    .search-btn {
+        width: 6rem;
+        height: 1.95rem;
+        font-size: 0.6rem;
+        border-radius: 0.95rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6rem;
+        height: 1.95rem;
+        font-size: 0.6rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+    .form-main {
+        max-width: 65rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .search-icon {
+        font-size: 1.05rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .voice-icon {
+        font-size: 1.05rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .text-input::placeholder {
+        font-size: 10.5px;
+    }
+
+    .text-input input:focus {
+        outline: none;
+        font-size: 10.5px;
+    }
+
+    .search-btn {
+        width: 6.25rem;
+        height: 2.05rem;
+        font-size: 0.65rem;
+        border-radius: 0.95rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6.25rem;
+        height: 2.05rem;
+        font-size: 0.65rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .form-main {
+        max-width: 65rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .search-icon {
+        font-size: 1.05rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .voice-icon {
+        font-size: 1.05rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .text-input::placeholder {
+        font-size: 10.5px;
+    }
+
+    .text-input input:focus {
+        outline: none;
+        font-size: 10.5px;
+    }
+
+    .search-btn {
+        width: 6.25rem;
+        height: 2.05rem;
+        font-size: 0.65rem;
+        border-radius: 0.95rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6.25rem;
+        height: 2.05rem;
+        font-size: 0.65rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2559px) {
+    .form-main {
+        max-width: 75rem;
+        padding: 0.55rem 1.6rem;
+    }
+
+    .search-icon {
+        font-size: 1.15rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .voice-icon {
+        font-size: 1.15rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .text-input::placeholder {
+        font-size: 11px;
+    }
+
+    .text-input input:focus {
+        outline: none;
+        font-size: 11px;
+    }
+
+    .search-btn {
+        width: 6.5rem;
+        height: 2.15rem;
+        font-size: 0.7rem;
+        border-radius: 0.95rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6.5rem;
+        height: 2.15rem;
+        font-size: 0.7rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .form-main {
+        max-width: 100rem;
+        padding: 0.55rem 1.6rem;
+    }
+
+    .search-icon {
+        font-size: 1.15rem;
+        margin-left: -0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .voice-icon {
+        font-size: 1.15rem;
+        margin-left: 0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.2rem;
+    }
+
+    .text-input::placeholder {
+        font-size: 11px;
+    }
+
+    .text-input input:focus {
+        outline: none;
+        font-size: 11px;
+    }
+
+    .search-btn {
+        width: 6.5rem;
+        height: 2.15rem;
+        font-size: 0.7rem;
+        border-radius: 0.95rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .random-btn {
+        width: 6.5rem;
+        height: 2.15rem;
+        font-size: 0.7rem;
+        border-radius: 0.95rem;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
     }
 }

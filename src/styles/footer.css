@@ -105,7 +105,7 @@
 }
 
 /* 375px - Mobile */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
+@media only screen and (min-width: 321px) and (max-width: 374px) {
     .country {
         max-width: 350px;
         padding: 5px;
@@ -170,7 +170,7 @@
 }
 
 /* 425px - Large Mobile */
-@media only screen and (min-width: 376px) and (max-width: 425px) {
+@media only screen and (min-width: 376px) and (max-width: 424px) {
     .country {
         max-width: 400px;
         padding: 6px;
@@ -235,7 +235,7 @@
 }
 
 /* 768px - Tablet */
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 767px) {
     .country {
         max-width: 730px;
         padding: 8px;
@@ -302,123 +302,197 @@
 /* Desktop Devices (769px and above) */
 
 /* 1024px - Small Laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .country {
-        max-width: 920px;
+        max-width: 990px;
+        padding: 10px;
     }
 
     .footer {
-        font-size: 0.92rem;
-        padding: 0.85rem 1.9rem;
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
     }
 
     .footer-one {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .footer-two {
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .footer-one li {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 
     .footer-two li {
-        margin-left: 1rem;
+        margin-left: 50rem;
+        margin-right: 1rem;
+        list-style-type: none
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .country {
+        max-width: 990px;
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
+    }
+
+    .footer-one {
+        margin-bottom: 0rem;
+    }
+
+    .footer-two {
+        margin-top: 0rem;
+    }
+
+    .footer-one li {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
         list-style-type: none;
+    }
+
+    .footer-two li {
+        margin-left: 50rem;
+        margin-right: 1rem;
+        list-style-type: none
     }
 }
 
 /* 1440px - Large Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) and (max-width: 1439px) {
     .country {
         max-width: 1400px;
+        padding: 12px;
     }
 
     .footer {
-        font-size: 0.95rem;
-        padding: 0.9rem 2rem;
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
     }
 
     .footer-one {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .footer-two {
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .footer-one li {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 
     .footer-two li {
-        margin-left: 1rem;
+        margin-left: 75rem;
+        margin-right: 1rem;
+        list-style-type: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .country {
+        max-width: 1400px;
+        padding: 12px;
+    }
+
+    .footer {
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
+    }
+
+    .footer-one {
+        margin-bottom: 0rem;
+    }
+
+    .footer-two {
+        margin-top: 0rem;
+    }
+
+    .footer-one li {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+        list-style-type: none;
+    }
+
+    .footer-two li {
+        margin-left: 75rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 }
 
 /* 2560px - Large Desktops */
-@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+@media only screen and (min-width: 1441px) and (max-width: 2559px) {
     .country {
         max-width: 2400px;
-        padding: 12px;
+        padding: 14px;
     }
 
     .footer {
-        font-size: 1rem;
-        padding: 1rem 2.2rem;
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
     }
 
     .footer-one {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .footer-two {
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .footer-one li {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 
     .footer-two li {
-        margin-left: 1rem;
+        margin-left: 145rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 }
 
 /* 2560px and Above - Ultra-Wide Desktops */
-@media only screen and (min-width: 2561px) {
+@media only screen and (min-width: 2560px) {
     .country {
-        max-width: 3100px;
+        max-width: 2500px;
         padding: 14px;
     }
 
     .footer {
-        font-size: 1.1rem;
-        padding: 1.2rem 2.4rem;
+        font-size: 0.7rem;
+        padding: 0.25rem 1rem;
     }
 
     .footer-one {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .footer-two {
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .footer-one li {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 
     .footer-two li {
-        margin-left: 1rem;
+        margin-left: 145rem;
+        margin-right: 1rem;
         list-style-type: none;
     }
 }
