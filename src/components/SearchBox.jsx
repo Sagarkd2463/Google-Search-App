@@ -1,18 +1,21 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsFillMicFill } from 'react-icons/bs';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import '../styles/searchBox.css';
 
 export default function SearchBox() {
-
-  const searchParams = useSearchParams();
   const router = useRouter();
-  const searchTerm = searchParams.get('searchTerm');
+  const { searchTerm } = router.query;
   const [term, setTerm] = useState(searchTerm || '');
+
+  useEffect(() => {
+    // Update the term when the search term from the query changes
+    setTerm(searchTerm || '');
+  }, [searchTerm]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,8 +24,7 @@ export default function SearchBox() {
   };
 
   return (
-    <form className='searchbox'
-      onSubmit={handleSubmit}>
+    <form className='searchbox' onSubmit={handleSubmit}>
       <input
         type="text"
         className='search-term'
