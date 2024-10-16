@@ -1,6 +1,6 @@
 import WebSearchResults from '@/components/WebSearchResults';
 import Link from 'next/link';
-import './style.css';
+
 
 export default async function WebSearchPage({ searchParams }) {
   const startIndex = searchParams.start || '1';
@@ -17,19 +17,19 @@ export default async function WebSearchPage({ searchParams }) {
 
   if (!results) {
     return (
-      <div className="no-result">
-        <h1 className="no-result-title">
+      <div className="flex flex-col justify-center items-center pt-10">
+        <h1 className="text-3xl mb-4">
           No results found for {searchParams.searchTerm}
         </h1>
-        <p className="searching">
+        <p className="text-lg">
           Try searching the web or images for something else{' '}
-          <Link href="/" className="home">
+          <Link href="/" className="text-blue-500">
             Home
           </Link>
         </p>
       </div>
     );
-  }
+  };
 
   return (
     <div>

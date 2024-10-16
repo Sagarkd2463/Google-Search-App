@@ -1,45 +1,42 @@
 import React from 'react';
 import CountryLookup from './CountryLookup';
-import '../styles/footer.css';
 import { FaFacebook, FaInstagram, } from "react-icons/fa";
 import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className='footer'>
-      <div className='country'>
+    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full'>
+      <div className='border-b px-8 py-3'>
         <CountryLookup />
       </div>
 
-      <div className='main'>
-        <ul className='footer-one'>
-          <li className='list'>About</li>
-          <li className='list'>Advertising</li>
-          <li className='list'>Business</li>
-          <li className='list'>How Search Works</li>
+      <div className='flex flex-col sm:flex-col justify-between items-center px-8 py-3 space-y-7 sm:space-y-0'>
+        <ul className='flex items-center space-x-6'>
+          <li className='hover:underline cursor-pointer'>About</li>
+          <li className='hover:underline cursor-pointer'>Advertising</li>
+          <li className='hover:underline cursor-pointer'>Business</li>
+          <li className='hover:underline cursor-pointer'>How Search Works</li>
         </ul>
 
-        <ul className='footer-two'>
-          <li className='list'>Privacy</li>
-          <li className='list'>Terms</li>
-          <li className='list'>Settings</li>
-          <li className='list'>News</li>
+        <ul className='flex items-center space-x-6'>
+          <li className='hover:underline cursor-pointer'>Privacy</li>
+          <li className='hover:underline cursor-pointer'>Terms</li>
+          <li className='hover:underline cursor-pointer'>Settings</li>
+          <li className='hover:underline cursor-pointer'>News</li>
         </ul>
-      </div>
 
-      <div className="social-icons">
-        <p className="follow">Follow us on</p>
-        <div className='instagram-icon'>
-          <FaInstagram />
-        </div>
-
-        <div className="facebook-icon">
-          <FaFacebook />
-        </div>
-
-        <div className="twiiter-icon">
-          <FaXTwitter />
-        </div>
+        <p className="text-1xl">Follow us on</p>
+        <ul className='flex items-end space-x-6'>
+          <li className='text-xl'>
+            <FaInstagram />
+          </li>
+          <li className='text-xl ml-1 '>
+            <FaFacebook />
+          </li>
+          <li className='text-xl ml-1'>
+            <FaXTwitter />
+          </li>
+        </ul>
       </div>
     </footer>
   );

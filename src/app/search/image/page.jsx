@@ -1,6 +1,6 @@
 import ImageSearchResults from '@/components/ImageSearchResults';
 import Link from 'next/link';
-import './styles.css';
+
 
 export default async function ImageSearchPage({ searchParams }) {
   const startIndex = searchParams.start || '1';
@@ -17,20 +17,20 @@ export default async function ImageSearchPage({ searchParams }) {
 
   if (!results) {
     return (
-      <div className='no-result'>
-        <h1 className='no-result-title'>
+      <div className='flex flex-col justify-center items-center pt-10'>
+        <h1 className='text-3xl mb-4'>
           No results found for {searchParams.searchTerm}
         </h1>
-        <p className='searching'>
+        <p className='text-lg'>
           Try searching the web or images for something else{' '}
-          <Link href='/' className='home'>
+          <Link href='/' className='text-blue-500'>
             Home
           </Link>
         </p>
       </div>
     );
-  }
+  };
 
   return <div>{results && <ImageSearchResults results={data} />}</div>;
-}
+};
 
