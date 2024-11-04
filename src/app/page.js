@@ -15,7 +15,7 @@ export default function Home() {
           height={100}
           priority
           style={{ width: 'auto' }}
-          className="h-12 sm:h-12 md:h-20 lg:24 xl:h-32 2xl:40"
+          className="h-12 sm:h-12 md:h-20 lg:h-24 xl:h-32 2xl:40"
         />
         <HomeSearch />
       </div>

@@ -22,8 +22,9 @@ export default function SearchBox() {
 
   return (
     <form
-      className='flex border border-gray-200 rounded-full shadow-lg 
-      px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center'
+      className='flex border border-gray-200 rounded-full shadow-lg md:px-5 md:py-1 
+      md:ml-5 md:mr-5 lg:px-7 lg:py-2 lg:ml-6 lg:mr-6 flex-grow max-w-4xl items-center 
+      2xl:max-w-6xl'
       onSubmit={handleSubmit}>
       <input
         type="text"
@@ -33,16 +34,16 @@ export default function SearchBox() {
       />
 
       <RxCross2
-        className='text-2xl text-gray-500 cursor-pointer sm:mr-2'
+        className='md:text-xl text-gray-500 cursor-pointer sm:mr-2'
         onClick={() => setTerm('')}
       />
 
       <BsFillMicFill
-        className='hidden sm:inline-flex text-4xl text-blue-500 border-l-2  border-gray-300 mr-3 pl-4'
+        className='hidden sm:inline-flex md:text-4xl text-blue-500 border-l-2 border-gray-300 mr-3 pl-4 cursor-pointer'
       />
 
       <AiOutlineSearch
-        className='text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer'
+        className='md:text-xl hidden sm:inline-flex text-blue-500 cursor-pointer'
         onClick={handleSubmit}
       />
     </form>
