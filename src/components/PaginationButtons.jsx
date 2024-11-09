@@ -18,8 +18,8 @@ export default function PaginationButtons() {
       {
         startIndex >= 10 && (
           <Link href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex - 10}`}>
-            <div className='flex flex-col items-center hover:underline'>
-              <BsChevronLeft className='h-5' />
+            <div className='flex flex-col items-center hover:underline hover:text-blue-600'>
+              <BsChevronLeft className='h-4' />
               <p>Previous</p>
             </div>
           </Link>
@@ -28,8 +28,8 @@ export default function PaginationButtons() {
       {
         startIndex <= 90 && (
           <Link href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex + 10}`}>
-            <div className='flex flex-col items-center hover:underline'>
-              <BsChevronRight className='h-5' />
+            <div className='flex flex-col items-center hover:underline hover:text-blue-600'>
+              <BsChevronRight className='h-4' />
               <p>Next</p>
             </div>
           </Link>

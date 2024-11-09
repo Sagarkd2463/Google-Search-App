@@ -6,7 +6,7 @@ import PaginationButtons from './PaginationButtons';
 
 export default function WebSearchResults({ results }) {
   if (!results || !results.searchInformation) {
-    return <p>No results found.</p>;
+    return <p className='ml-3 mt-2 md:ml-5 lg:ml-8'>No results found.</p>;
   }
 
   return (

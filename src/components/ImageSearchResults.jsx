@@ -33,7 +33,7 @@ export default function ImageSearchResults({ results }) {
           </div>
         ))}
       </div>
-      <div className='ml-16'>
+      <div className='ml-2 mt-14'>
         <PaginationButtons />
       </div>
     </div>

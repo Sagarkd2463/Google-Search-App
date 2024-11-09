@@ -6,7 +6,7 @@ import { SlChemistry } from "react-icons/sl";
 
 export default function HomeHeader() {
   return (
-    <header className='flex justify-end p-3 -mr-1'>
+    <header className='flex justify-end p-3 mr-3'>
       <div className='flex space-x-4 items-center'>
         <Link href={"https://mail.google.com"}
           className='hover:underline text-sm'>

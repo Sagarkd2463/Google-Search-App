@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
 
       <div className='flex flex-col sm:flex-col items-center px-5 -py-2 space-y-6 sm:space-y-0 md:space-y-2 lg:space-y-3 
-      xl:space-y-4 2xl:space-y-6'>
+      xl:space-y-4 2xl:space-y-6 mt-3'>
         <ul className='flex items-center space-x-4'>
           <li className='hover:underline cursor-pointer'>About</li>
           <li className='hover:underline cursor-pointer'>Advertising</li>
@@ -25,18 +25,18 @@ export default function Footer() {
           <li className='hover:underline cursor-pointer'>Settings</li>
           <li className='hover:underline cursor-pointer'>News</li>
         </ul>
-        <div className='flex flex-col items-center space-x-3 -mt-1 lg:space-y-2 lg:space-x-3 xl:space-y-3 xl:space-x-3 
+        <div className='flex flex-col items-center space-x-3 lg:space-y-2 lg:space-x-3 xl:space-y-3 xl:space-x-3 
         2xl:space-y-4 2xl:space-x-4 xl:py-0 2xl:py-5'>
-          <p className="text-1xl">Follow us on</p>
-          <ul className='flex items-center space-x-6'>
-            <li className='text-lg'>
-              <FaInstagram />
+          <p className="text-1xl font-semibold mb-1 ml-2">Follow us on</p>
+          <ul className='flex items-center space-x-3.5'>
+            <li>
+              <FaInstagram className='text-base' />
             </li>
-            <li className='text-lg ml-1'>
-              <FaFacebook />
+            <li>
+              <FaFacebook className='text-base -ml-1' />
             </li>
-            <li className='text-lg ml-1'>
-              <FaXTwitter />
+            <li>
+              <FaXTwitter className='text-base -ml-1' />
             </li>
           </ul>
         </div>
