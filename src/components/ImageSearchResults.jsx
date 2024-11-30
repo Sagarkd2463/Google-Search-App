@@ -2,8 +2,18 @@ import React from 'react';
 import Link from 'next/link';
 import PaginationButtons from './PaginationButtons';
 
-
 export default function ImageSearchResults({ results }) {
+
+  if (!results || !results.items?.length) {
+    return (
+      <div className="ml-3 mt-2 md:ml-5 lg:ml-8">
+        <p className="text-gray-600 text-lg">
+          No image results found. Try searching for something else.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className='sm:pb-24 pb-40 mt-4'>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-3 space-x-4'>
@@ -33,6 +43,7 @@ export default function ImageSearchResults({ results }) {
           </div>
         ))}
       </div>
+
       <div className='ml-2 mt-14'>
         <PaginationButtons />
       </div>
