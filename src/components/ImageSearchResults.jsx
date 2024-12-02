@@ -29,13 +29,13 @@ export default function ImageSearchResults({ results }) {
               </Link>
 
               <Link href={result.image.contextLink}>
-                <h2 className='group-hover:underline truncate text-xl'>
+                <h2 className='group-hover:underline truncate text-normal'>
                   {result.title}
                 </h2>
               </Link>
 
               <Link href={result.image.contextLink}>
-                <p className='group-hover:underline truncate text-gray-600'>
+                <p className='group-hover:underline truncate text-gray-600 text-sm'>
                   {result.displayLink}
                 </p>
               </Link>
@@ -44,11 +44,9 @@ export default function ImageSearchResults({ results }) {
         ))}
       </div>
 
-      <div className='ml-2 mt-14'>
-        <PaginationButtons />
-      </div>
+      <PaginationButtons />
     </div>
   );
-}
+};
 
 

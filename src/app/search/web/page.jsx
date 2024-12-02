@@ -16,10 +16,7 @@ export default async function WebSearchPage({ searchParams }) {
     );
   }
 
-  const url = `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${encodeURIComponent(
-    searchTerm)}&start=${parseInt(startIndex, 10)}`;
-
-  console.log('Fetching URL:', url);
+  const url = `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${encodeURIComponent(searchTerm)}&start=${parseInt(startIndex, 10)}`;
 
   try {
     const response = await fetch(url);
@@ -39,7 +36,7 @@ export default async function WebSearchPage({ searchParams }) {
           <p className="text-lg">
             Try searching for something else{' '}
             <Link href="/" className="text-blue-500">
-              Home
+              Go Home
             </Link>
           </p>
         </div>
@@ -59,7 +56,7 @@ export default async function WebSearchPage({ searchParams }) {
         <p className="text-lg">
           Please try again later{' '}
           <Link href="/" className="text-blue-500">
-            Home
+            Go Home
           </Link>
         </p>
       </div>
