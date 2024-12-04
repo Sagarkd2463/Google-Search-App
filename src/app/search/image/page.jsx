@@ -1,4 +1,5 @@
 import ImageSearchResults from '@/components/ImageSearchResults';
+import config from '@/config/config';
 import Link from 'next/link';
 
 export default async function ImageSearchPage({ searchParams }) {
@@ -16,7 +17,7 @@ export default async function ImageSearchPage({ searchParams }) {
     );
   }
 
-  const url = `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${encodeURIComponent(searchTerm)}&searchType=image&start=${parseInt(startIndex, 10)}`;
+  const url = `https://www.googleapis.com/customsearch/v1?key=${config.search.API_KEY}&cx=${config.search.CONTEXT_KEY}&q=${encodeURIComponent(searchTerm)}&searchType=image&start=${parseInt(startIndex, 10)}`;
 
   try {
     const response = await fetch(url);

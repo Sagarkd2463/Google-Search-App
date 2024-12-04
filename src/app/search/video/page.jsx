@@ -1,4 +1,5 @@
 import VideoSearchResults from '@/components/VideoSearchResults';
+import config from '@/config/config';
 import Link from 'next/link';
 
 export default async function VideoSearchPage({ searchParams }) {
@@ -16,7 +17,8 @@ export default async function VideoSearchPage({ searchParams }) {
         );
     }
 
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${encodeURIComponent(searchTerm)}&type=video&key=${process.env.YOUTUBE_API_KEY}&pageToken=${startIndex}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${encodeURIComponent(searchTerm)}&type=video&key=${config.youtube.API_KEY}&pageToken=${startIndex}`;
+    console.log(url);
 
     try {
         const response = await fetch(url);
@@ -26,6 +28,8 @@ export default async function VideoSearchPage({ searchParams }) {
 
         const data = await response.json();
         const results = data.items;
+
+        console.log(results);
 
         if (!results || results.length === 0) {
             return (
