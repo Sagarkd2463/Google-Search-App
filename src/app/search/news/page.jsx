@@ -1,9 +1,9 @@
-import VideoSearchResults from '@/components/VideoSearchResults';
+import NewsSearchResults from '@/components/NewsSearchResults';
 import config from '@/config/config';
 import Link from 'next/link';
 
-export default async function VideoSearchPage({ searchParams }) {
-    const pageToken = searchParams.pageToken || '';
+export default async function NewsSearchPage({ searchParams }) {
+    const page = Math.max(1, parseInt(searchParams.page, 10) || 1);
     const searchTerm = searchParams.searchTerm || '';
 
     if (!searchTerm) {
@@ -17,8 +17,8 @@ export default async function VideoSearchPage({ searchParams }) {
         );
     }
 
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${encodeURIComponent(
-        searchTerm)}&type=video&key=${config.youtube.API_KEY}&pageToken=${pageToken}`;
+    const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(searchTerm)}&apiKey=${config.news.API_KEY}&page=${page}
+    &sortBy=publishedAt&language=en`;
 
     try {
         const response = await fetch(url);
@@ -27,18 +27,13 @@ export default async function VideoSearchPage({ searchParams }) {
         }
 
         const data = await response.json();
+        const articles = data.articles || [];
 
-        if (data.error) {
-            throw new Error(data.error.message || 'Unknown API error');
-        }
-
-        const results = data.items || [];
-
-        if (results.length === 0) {
+        if (articles.length === 0) {
             return (
                 <div className="flex flex-col justify-center items-center pt-10">
                     <h1 className="text-3xl mb-4">
-                        No video results found for "{searchTerm}"
+                        No results found for "{searchTerm}"
                     </h1>
                     <p className="text-lg">
                         Try searching for something else{' '}
@@ -52,11 +47,11 @@ export default async function VideoSearchPage({ searchParams }) {
 
         return (
             <div>
-                <VideoSearchResults results={data} />
+                <NewsSearchResults results={data} searchTerm={searchTerm} page={page} />
             </div>
         );
     } catch (error) {
-        console.error('Error fetching video search results:', error);
+        console.error('Error fetching search results:', error);
         return (
             <div className="flex flex-col justify-center items-center pt-10">
                 <h1 className="text-3xl mb-4">Something went wrong</h1>

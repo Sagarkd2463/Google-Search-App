@@ -42,7 +42,7 @@ export default function HomeSearch() {
 
         <input
           type="text"
-          className='flex-grow focus:outline-none -ml-0'
+          className='flex-grow text-lg focus:outline-none -ml-0'
           onChange={(e) => setInput(e.target.value)}
           placeholder='Search Google or Type a url'
         />

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PaginationButtons from './PaginationButtons';
 
 export default function VideoSearchResults({ results }) {
-    if (!results || !results?.items || !results.items?.length === 0) {
+    if (!results || !results.items || results.items.length === 0) {
         return (
             <div className="ml-3 mt-2 md:ml-5 lg:ml-8">
                 <p className="text-gray-600 text-lg">

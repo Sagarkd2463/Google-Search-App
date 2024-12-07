@@ -4,6 +4,7 @@ import React from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { AiOutlineCamera, AiOutlineSearch } from 'react-icons/ai';
 import { MdOutlineOndemandVideo } from 'react-icons/md';
+import { BiNews } from 'react-icons/bi';
 
 export default function SearchHeaderOptions() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function SearchHeaderOptions() {
   const pathname = usePathname();
 
   const selectTab = (tab) => {
-    router.push(`/search/${tab === "Images" ? "image" : tab === "Videos" ? "video" : "web"}?searchTerm=${searchTerm}`);
+    router.push(`/search/${tab === "Images" ? "image" : tab === "Videos" ? "video" : tab === "News" ? "news" : "web"}?searchTerm=${searchTerm}`);
   };
 
   return (
@@ -42,6 +43,15 @@ export default function SearchHeaderOptions() {
       >
         <MdOutlineOndemandVideo className="text-md" />
         <p>Videos</p>
+      </div>
+
+      <div
+        className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 
+        ${pathname === '/search/news' && '!text-blue-600 !border-blue-600'}`}
+        onClick={() => selectTab("News")}
+      >
+        <BiNews className="text-md" />
+        <p>News</p>
       </div>
     </div>
   );
