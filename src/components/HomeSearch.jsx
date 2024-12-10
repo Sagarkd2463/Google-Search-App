@@ -6,38 +6,70 @@ import { BsFillMicFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../context/AuthContext";
 
-
 export default function HomeSearch() {
   const [input, setInput] = useState("");
+  const [isListening, setIsListening] = useState(false);
   const [randomSearchLoading, setRandomSearchLoading] = useState(false);
   const router = useRouter();
   const { user } = useAuth();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!input.trim()) return;
-
-    if (user) {
-      router.push(`/search/web?searchTerm=${input}&userId=${user.uid}`);
-    } else {
-      router.push(`/search/web?searchTerm=${input}`);
-    }
+    const userIdParam = user ? `&userId=${user.uid}` : "";
+    router.push(`/search/web?searchTerm=${input}${userIdParam}`);
   };
 
-  const randomSearch = async (e) => {
-    setRandomSearchLoading(true);
-    const response = await fetch("https://random-word-api.herokuapp.com/word")
-      .then((res) => res.json())
-      .then((data) => data[0]);
-
-    if (!response) return;
-
-    if (user) {
-      router.push(`/search/web?searchTerm=${response}&userId=${user.uid}`);
-    } else {
-      router.push(`/search/web?searchTerm=${response}`);
+  const handleMicClick = () => {
+    if (!("webkitSpeechRecognition" in window)) {
+      alert("Speech recognition is not supported in this browser.");
+      return;
     }
+
+    const recognition = new window.webkitSpeechRecognition();
+    recognition.lang = "en-IN";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => setIsListening(true);
+    recognition.onend = () => setIsListening(false);
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      setInput(transcript);
+
+      // Automatically submit the search
+      if (transcript.trim()) {
+        const userIdParam = user ? `&userId=${user.uid}` : "";
+        router.push(`/search/web?searchTerm=${transcript}${userIdParam}`);
+      }
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech recognition error:", event.error.message);
+      alert("Error occurred during speech recognition. Please try again.");
+    };
+
+    recognition.start();
+  };
+
+  const handleRandomSearch = async () => {
+    setRandomSearchLoading(true);
+
+    try {
+      const response = await fetch("https://random-word-api.herokuapp.com/word");
+      const [randomWord] = await response.json();
+
+      if (randomWord) {
+        const userIdParam = user ? `&userId=${user.uid}` : "";
+        router.push(`/search/web?searchTerm=${randomWord}${userIdParam}`);
+      }
+    } catch (error) {
+      console.error("Error fetching random word:", error);
+      alert("Unable to fetch a random word. Please try again.");
+    }
+
     setRandomSearchLoading(false);
   };
 
@@ -53,28 +85,34 @@ export default function HomeSearch() {
         <input
           type="text"
           className="flex-grow text-lg focus:outline-none -ml-0"
+          value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Search Google or Type a url"
+          placeholder="Search Google or Type a URL"
         />
 
-        <BsFillMicFill className="text-normal mt-1 ml-1" />
+        <BsFillMicFill
+          className={`text-normal mt-1 ml-1 cursor-pointer ${isListening ? "text-red-500 animate-pulse" : ""
+            }`}
+          onClick={handleMicClick}
+        />
       </form>
 
       <div className="flex flex-col space-y-2 sm:space-y-0 justify-center sm:flex-row mt-8 sm:space-x-4">
         <button
-          className="bg-blue-400 text-white rounded-full text-sm text-gray-800 hover:ring-gray-200 focus:outline-none 
+          className="bg-blue-400 text-white rounded-full text-sm hover:ring-gray-200 focus:outline-none 
           active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow"
           onClick={handleSubmit}
         >
           Google Search
         </button>
+
         <button
-          className="bg-blue-400 text-white rounded-full text-sm text-gray-800 hover:ring-gray-200 focus:outline-none 
+          className="bg-blue-400 text-white rounded-full text-sm hover:ring-gray-200 focus:outline-none 
           active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm"
-          onClick={randomSearch}
+          onClick={handleRandomSearch}
           disabled={randomSearchLoading}
         >
-          {randomSearchLoading ? "Loading" : "I am feeling Lucky"};
+          {randomSearchLoading ? "Loading..." : "I'm Feeling Lucky"}
         </button>
       </div>
     </>

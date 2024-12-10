@@ -1,25 +1,29 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 export default function CountryLookup() {
-
-  const [country, setCountry] = useState('India');
+  const [location, setLocation] = useState({ country: "India", city: "Mumbai" });
 
   useEffect(() => {
-    const getCountry = async () => {
-      const response = await fetch('http://ip-api.com/json/')
-        .then((res) => res.json())
-        .then((data) => data.country);
-
-      if (!response) return;
-      setCountry(response);
+    const getLocation = async () => {
+      try {
+        const response = await fetch("http://ip-api.com/json/");
+        const data = await response.json();
+        if (data) {
+          setLocation({ country: data.country, city: data.city });
+        }
+      } catch (error) {
+        console.error("Error fetching location data:", error);
+      }
     };
 
-    getCountry();
+    getLocation();
   }, []);
 
   return (
-    <div>{country}</div>
+    <div>
+      <p className="text-lg text-gray-700">{location.city}, {location.country}</p>
+    </div>
   );
 };
