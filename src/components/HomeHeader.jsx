@@ -7,7 +7,8 @@ import { SlChemistry } from "react-icons/sl";
 import { signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useAuth } from "../context/AuthContext";
-
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function HomeHeader() {
   const { user, setUser } = useAuth();
@@ -32,12 +33,25 @@ export default function HomeHeader() {
     }
   };
 
+  const handleGmailRedirect = () => {
+    if (user) {
+      const email = user.email;
+      const gmailRedirectUrl = `https://mail.google.com/mail/u/${email}`;
+      window.location.href = gmailRedirectUrl;
+    } else {
+      toast.error("Please sign in to access your Gmail account.");
+    }
+  };
+
   return (
     <header className="flex justify-end p-3 mr-3">
       <div className="flex space-x-4 items-center">
-        <Link href={"https://mail.google.com"} className="hover:underline text-sm">
+        <button
+          onClick={handleGmailRedirect}
+          className="hover:underline text-sm"
+        >
           Gmail
-        </Link>
+        </button>
 
         <Link href={"https://image.google.com"} className="hover:underline text-sm">
           Images
@@ -58,8 +72,8 @@ export default function HomeHeader() {
             <p className="text-sm">{user.displayName}</p>
             <button
               onClick={handleSignOut}
-              className="bg-red-400 text-white text-sm px-3 py-1 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow
-                md:px-4 md:py-2 lg:px-5 lg:py-3 xl:px-4 xl:py-2 2xl:px-3 2xl:py-2"
+              className="bg-red-400 text-white text-sm px-3 py-1 font-medium rounded-md hover:brightness-105 hover:shadow-md 
+              transition-shadow md:px-4 md:py-2 lg:px-5 lg:py-3 xl:px-4 xl:py-2 2xl:px-3 2xl:py-2"
             >
               Sign out
             </button>
@@ -67,14 +81,14 @@ export default function HomeHeader() {
         ) : (
           <button
             onClick={handleSignIn}
-            className="bg-blue-400 text-white text-sm px-3 py-1 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow
-              md:px-4 md:py-2 lg:px-5 lg:py-3 xl:px-4 xl:py-2 2xl:px-3 2xl:py-2"
+            className="bg-blue-400 text-white text-sm px-3 py-1 font-medium rounded-md hover:brightness-105 
+            hover:shadow-md transition-shadow md:px-4 md:py-2 lg:px-5 lg:py-3 xl:px-4 xl:py-2 2xl:px-3 2xl:py-2"
           >
             Sign in
           </button>
         )}
       </div>
+      <ToastContainer className={'mt-10'} />
     </header>
   );
 };
-

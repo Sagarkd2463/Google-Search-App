@@ -5,6 +5,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillMicFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../context/AuthContext";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function HomeSearch() {
   const [input, setInput] = useState("");
@@ -15,14 +17,22 @@ export default function HomeSearch() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!user) {
+      toast.error("Please sign in to search.");
+      return;
+    }
     if (!input.trim()) return;
     const userIdParam = user ? `&userId=${user.uid}` : "";
     router.push(`/search/web?searchTerm=${input}${userIdParam}`);
   };
 
   const handleMicClick = () => {
+    if (!user) {
+      toast.error("Please sign in to use voice search.");
+      return;
+    }
     if (!("webkitSpeechRecognition" in window)) {
-      alert("Speech recognition is not supported in this browser.");
+      toast.error("Speech recognition is not supported in this browser.");
       return;
     }
 
@@ -39,7 +49,6 @@ export default function HomeSearch() {
       const transcript = event.results[0][0].transcript;
       setInput(transcript);
 
-      // Automatically submit the search
       if (transcript.trim()) {
         const userIdParam = user ? `&userId=${user.uid}` : "";
         router.push(`/search/web?searchTerm=${transcript}${userIdParam}`);
@@ -48,13 +57,17 @@ export default function HomeSearch() {
 
     recognition.onerror = (event) => {
       console.error("Speech recognition error:", event.error.message);
-      alert("Error occurred during speech recognition. Please try again.");
+      toast.error("Error during speech recognition. Please try again.");
     };
 
     recognition.start();
   };
 
   const handleRandomSearch = async () => {
+    if (!user) {
+      toast.error("Please sign in to perform a random search.");
+      return;
+    }
     setRandomSearchLoading(true);
 
     try {
@@ -67,7 +80,7 @@ export default function HomeSearch() {
       }
     } catch (error) {
       console.error("Error fetching random word:", error);
-      alert("Unable to fetch a random word. Please try again.");
+      toast.error("Unable to fetch a random word. Please try again.");
     }
 
     setRandomSearchLoading(false);
@@ -91,8 +104,7 @@ export default function HomeSearch() {
         />
 
         <BsFillMicFill
-          className={`text-normal mt-1 ml-1 cursor-pointer ${isListening ? "text-red-500 animate-pulse" : ""
-            }`}
+          className={`text-normal mt-1 ml-1 cursor-pointer ${isListening ? "text-red-500 animate-pulse" : ""}`}
           onClick={handleMicClick}
         />
       </form>
