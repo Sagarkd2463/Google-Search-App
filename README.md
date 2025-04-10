@@ -1,41 +1,63 @@
-<<<<<<< HEAD
-# MovieApp
-Made this project using HTML, CSS, JAVASCRIPT &amp; NEXT JS.
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+GOOGLE CLONE 
+------------------------------------------
+A fully responsive Google Search Clone built with modern web technologies, replicating core features of Google Search including web search, image/video/news tabs, and voice-based search input. The application also integrates Firebase Authentication for user sign-in and sign-out functionality.
 
-## Getting Started
+FEATURES 
+------------------------------------------
+Dynamic search results using a simulated API pattern
 
-First, run the development server:
+Tab-based navigation (Web, Images, Videos, News)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Speech-to-text search using Web Speech API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Firebase Authentication (Google Sign-in/Sign-out)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Search history tracking and responsive UI
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Reusable components with client-side routing
 
-## Learn More
+TECH STACK 
+------------------------------------------
+Frontend: Next.js (App Router), React.js, Tailwind CSS
+Authentication: Firebase Auth
+State Management: React Context
+Utilities: React Icons, Web Speech API
 
-To learn more about Next.js, take a look at the following resources:
+FOLDER STRUCTURE 
+------------------------------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   └── search/
+│       ├── web/
+│       ├── image/
+│       ├── video/
+│       └── news/
+├── components/
+│   ├── SearchBox.js
+│   ├── SearchHeader.js
+│   ├── SearchHeaderOptions.js
+│   ├── PaginationButtons.js
+├── context/
+│   └── AuthContext.js
+├── utils/
+│   └── firebase.js
+├── public/
+│   └── images/
+├── styles/
+├── README.md
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+USAGE 
+------------------------------------------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Run the app locally with npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> d6748be (First commit)
+2. Search any keyword from the homepage input
+
+3. Use voice search (microphone icon) for hands-free input
+
+4. Navigate through the tabs to explore Web, Image, Video, and News results
+
+5. Sign in or sign out with your Google account (Firebase Auth)
